@@ -17,10 +17,8 @@
         .container {
             background: #111;
             border: 2px solid #00ff88;
-            border-radius: 8px;
             padding: 15px;
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
-            height: calc(100vh - 20px);
+            height: 95vh;
             overflow: hidden;
         }
 
@@ -36,7 +34,6 @@
             font-size: 1.6em;
             font-weight: 700;
             margin-bottom: 4px;
-            text-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
             letter-spacing: 1px;
         }
 
@@ -199,7 +196,7 @@
                     <!-- 8:00 AM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "8" %}
+                        {% if event.start_time.hour == 8 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -212,7 +209,7 @@
                     <!-- 9:00 AM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "9" %}
+                        {% if event.start_time.hour == 9 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -225,7 +222,7 @@
                     <!-- 10:00 AM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "10" %}
+                        {% if event.start_time.hour == 10 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -238,7 +235,7 @@
                     <!-- 11:00 AM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "11" %}
+                        {% if event.start_time.hour == 11 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -251,7 +248,7 @@
                     <!-- 12:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "12" %}
+                        {% if event.start_time.hour == 12 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -264,7 +261,7 @@
                     <!-- 1:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "13" %}
+                        {% if event.start_time.hour == 13 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -277,7 +274,7 @@
                     <!-- 2:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "14" %}
+                        {% if event.start_time.hour == 14 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -290,7 +287,7 @@
                     <!-- 3:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "15" %}
+                        {% if event.start_time.hour == 15 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -303,7 +300,7 @@
                     <!-- 4:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "16" %}
+                        {% if event.start_time.hour == 16 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
@@ -316,7 +313,7 @@
                     <!-- 5:00 PM -->
                     <td class="period-slot">
                         {% for event in events %}
-                        {% if event.start_time|time:"G" == "17" %}
+                        {% if event.start_time.hour == 17 %}
                         <div class="event-card">
                             <div class="course-code glow">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
