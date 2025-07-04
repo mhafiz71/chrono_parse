@@ -19,4 +19,6 @@ urlpatterns = [
     # --- ADDED: URL for the download feature ---
     path('download-timetable/', download_timetable_pdf,
          name='download_timetable_pdf'),
+    path('download-timetable-jpg/', download_timetable_jpg,
+         name='download_timetable_jpg'),
 ]
