@@ -1,96 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Your Timetable - ChronoParse (Minimal)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timetable - Minimal</title>
     <style>
-        @page { size: A4 landscape; margin: 0.5cm; }
+        @page {
+            size: A4 landscape;
+            margin: 0.5in;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: "Helvetica", "Arial", sans-serif;
+            font-family: 'Arial', sans-serif;
+            font-size: 8pt;
+            line-height: 1.2;
             color: #333;
             background: white;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.4;
-            font-size: 11pt;
         }
 
         .container {
+            width: 100%;
             max-width: 100%;
-            height: 95vh;
-            overflow: hidden;
         }
 
         .header {
             text-align: center;
             margin-bottom: 15px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #ddd;
             padding-bottom: 8px;
         }
 
-        h1 {
+        .title {
+            font-size: 16pt;
+            font-weight: 700;
             color: #333;
-            font-size: 1.5em;
-            font-weight: 600;
-            margin-bottom: 4px;
-            letter-spacing: -0.3px;
+            margin-bottom: 3px;
         }
 
-        h2 {
+        .subtitle {
+            font-size: 9pt;
             color: #666;
-            font-weight: 400;
-            font-size: 0.9em;
-            margin: 0;
+            margin-bottom: 2px;
         }
 
-        .generated-info {
-            text-align: center;
-            color: #888;
-            font-size: 0.6em;
-            margin-bottom: 10px;
+        .generated-by {
+            font-size: 7pt;
+            color: #999;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            border: 2px solid #ddd;
-            font-size: 11pt;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 12px 8px;
-            text-align: center;
-            font-size: 11pt;
-            border: 1px solid #ddd;
-            vertical-align: middle;
+            margin-bottom: 10px;
+            table-layout: fixed;
         }
 
         th {
             background: #f5f5f5;
-            color: #333;
+            padding: 6px 4px;
+            text-align: center;
             font-weight: 600;
-            font-size: 12pt;
+            font-size: 8pt;
+            border: 1px solid #ddd;
+            color: #333;
         }
 
         .day-header {
-            background: #4a5568;
-            color: white;
-            font-weight: 700;
-            text-align: center;
-            width: 120px;
-            font-size: 13pt;
-            padding: 15px 8px;
+            width: 12%;
+            background: #e9ecef;
+            font-weight: 600;
         }
 
         .time-header {
-            background: #e9ecef;
-            color: #495057;
+            width: 8.8%;
+            background: #f8f9fa;
+            font-size: 7pt;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            vertical-align: top;
+            padding: 2px;
+        }
+
+        .day-cell {
+            background: #f8f9fa;
             font-weight: 600;
             text-align: center;
-            min-width: 100px;
-            font-size: 11pt;
-            padding: 12px 6px;
+            padding: 8px 4px;
+            font-size: 8pt;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
         }
 
         .time-slot {
@@ -111,10 +119,6 @@
             text-align: left;
         }
 
-        .event-item:last-child {
-            margin-bottom: 0;
-        }
-
         .course-code {
             font-weight: 700;
             font-size: 10pt;
@@ -131,40 +135,36 @@
         }
 
         .details {
-            font-size: 8pt;
-            color: #888;
+            font-size: 7pt;
+            color: #777;
             margin-bottom: 1px;
             display: block;
-            line-height: 1.2;
         }
 
         .no-classes {
             text-align: center;
             color: #999;
             font-style: italic;
-            padding: 20px;
-            font-size: 9pt;
+            padding: 15px;
+            font-size: 7pt;
         }
 
         .footer {
             text-align: center;
-            margin-top: 20px;
-            color: #888;
-            font-size: 7pt;
+            margin-top: 15px;
+            padding-top: 8px;
             border-top: 1px solid #ddd;
-            padding-top: 10px;
+            font-size: 7pt;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>My Timetable</h1>
-            <h2>{{ source_name }}</h2>
-        </div>
-
-        <div class="generated-info">
-            Generated by ChronoParse AI • {{ "now"|date:"F j, Y \a\t g:i A" }}
+            <div class="title">My Timetable</div>
+            <div class="subtitle">{{ source_name }} - Second Semester</div>
+            <div class="generated-by">Generated by ChronoParse AI</div>
         </div>
 
         <table>
@@ -186,7 +186,7 @@
             <tbody>
                 {% for day, events in schedule.items %}
                 <tr>
-                    <td class="day-header">{{ day }}</td>
+                    <td class="day-cell">{{ day|upper }}</td>
                     <!-- 8:00 AM -->
                     <td class="time-slot">
                         {% for event in events %}
