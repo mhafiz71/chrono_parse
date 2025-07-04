@@ -18,6 +18,14 @@ from xhtml2pdf import pisa
 from .forms import TimetableSourceForm
 from .models import TimetableSource
 
+# Simple class to convert dictionary to object for template access
+
+
+class EventObject:
+    def __init__(self, event_dict):
+        for key, value in event_dict.items():
+            setattr(self, key, value)
+
 # --- HELPER 1: For parsing time like "7:00a - 9:55a" ---
 
 
@@ -273,8 +281,11 @@ def download_timetable_pdf(request):
         return HttpResponse("Timetable source not found.", status=404)
 
     days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    schedule = {day: sorted([e for e in student_events if e['day'] == day],
-                            key=lambda x: x['start_time']) for day in days_of_week}
+
+    # Convert event dictionaries to objects for template access
+    event_objects = [EventObject(e) for e in student_events]
+    schedule = {day: sorted([e for e in event_objects if e.day == day],
+                            key=lambda x: x.start_time) for day in days_of_week}
 
     # Select template based on user choice
     template_map = {
@@ -288,7 +299,7 @@ def download_timetable_pdf(request):
         template_type, 'core/timetable_pdf_modern.html')
     template = get_template(template_path)
     html = template.render(
-        {'schedule': schedule, 'source_name': source.display_name, 'template_type': template_type})
+        {'schedule': schedule, 'days_of_week': days_of_week, 'source_name': source.display_name, 'template_type': template_type})
 
     result = BytesIO()
     pdf = pisa.pisaDocument(BytesIO(html.encode("UTF-8")), result)
