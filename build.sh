@@ -4,13 +4,29 @@
 
 set -o errexit  # exit on error
 
-# Install dependencies
+echo "Starting build process..."
+
+# Install Python dependencies
+echo "Installing Python dependencies..."
 pip install -r requirements.txt
 
+# Install Node.js dependencies and build Tailwind CSS
+echo "Installing Node.js dependencies..."
+cd theme/static_src
+npm install
+
+echo "Building Tailwind CSS..."
+npm run build
+
+# Go back to project root
+cd ../..
+
 # Collect static files
+echo "Collecting static files..."
 python manage.py collectstatic --noinput
 
 # Run database migrations
+echo "Running database migrations..."
 python manage.py migrate
 
 # Create superuser if it doesn't exist (optional)
