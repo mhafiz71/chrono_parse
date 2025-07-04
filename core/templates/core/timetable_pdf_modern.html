@@ -4,21 +4,27 @@
     <meta charset="utf-8">
     <title>Your Timetable - ChronoParse (Modern)</title>
     <style>
-        @page { size: A4 landscape; margin: 1cm; }
+        @page {
+            size: A4 landscape;
+            margin: 0.5cm;
+        }
         body {
             font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
             color: #2d3748;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
-            padding: 20px;
+            padding: 10px;
+            font-size: 8pt;
         }
 
         .container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            height: calc(100vh - 20px);
+            overflow: hidden;
         }
 
         .header {
