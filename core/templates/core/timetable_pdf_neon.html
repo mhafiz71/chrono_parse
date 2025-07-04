@@ -195,23 +195,23 @@
                     <th class="time-header">10:00 AM</th>
                     <th class="time-header">11:00 AM</th>
                     <th class="time-header">12:00 PM</th>
-                    <th class="period-header glow">1:00 PM</th>
-                    <th class="period-header glow">2:00 PM</th>
-                    <th class="period-header glow">3:00 PM</th>
-                    <th class="period-header glow">4:00 PM</th>
-                    <th class="period-header glow">5:00 PM</th>
+                    <th class="time-header">1:00 PM</th>
+                    <th class="time-header">2:00 PM</th>
+                    <th class="time-header">3:00 PM</th>
+                    <th class="time-header">4:00 PM</th>
+                    <th class="time-header">5:00 PM</th>
                 </tr>
             </thead>
             <tbody>
                 {% for day, events in schedule.items %}
                 <tr>
-                    <td class="day-header glow">{{ day|upper }}</td>
+                    <td class="day-cell">{{ day|upper }}</td>
                     <!-- 8:00 AM -->
                     <td class="period-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 8 %}
                         <div class="event-card">
-                            <div class="course-code glow">{{ event.course_code }}</div>
+                            <div class="course-code">{{ event.course_code }}</div>
                             <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
                             <div class="details">⚡ {{ event.location }}</div>
                             <div class="details">🎯 {{ event.lecturer }}</div>
