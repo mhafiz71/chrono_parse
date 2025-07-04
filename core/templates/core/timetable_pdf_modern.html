@@ -180,16 +180,16 @@
             <thead>
                 <tr>
                     <th class="day-header">Day</th>
-                    <th class="period-header">8:00 AM</th>
-                    <th class="period-header">9:00 AM</th>
-                    <th class="period-header">10:00 AM</th>
-                    <th class="period-header">11:00 AM</th>
-                    <th class="period-header">12:00 PM</th>
-                    <th class="period-header">1:00 PM</th>
-                    <th class="period-header">2:00 PM</th>
-                    <th class="period-header">3:00 PM</th>
-                    <th class="period-header">4:00 PM</th>
-                    <th class="period-header">5:00 PM</th>
+                    <th class="time-header">8:00 AM</th>
+                    <th class="time-header">9:00 AM</th>
+                    <th class="time-header">10:00 AM</th>
+                    <th class="time-header">11:00 AM</th>
+                    <th class="time-header">12:00 PM</th>
+                    <th class="time-header">1:00 PM</th>
+                    <th class="time-header">2:00 PM</th>
+                    <th class="time-header">3:00 PM</th>
+                    <th class="time-header">4:00 PM</th>
+                    <th class="time-header">5:00 PM</th>
                 </tr>
             </thead>
             <tbody>
@@ -197,27 +197,29 @@
                 <tr>
                     <td class="day-header">{{ day }}</td>
                     <!-- 8:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 8 %}
                         <div class="event-card">
                             <div class="course-code">{{ event.course_code }}</div>
-                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="details">📍 {{ event.location }}</div>
-                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
+                            <div class="time">{{ event.start_time.hour }}:{{ event.start_time.minute|stringformat:"02d" }}-{{ event.end_time.hour
+                                }}:{{ event.end_time.minute|stringformat:"02d" }}</div>
+                            <div class="details">{{ event.location }}</div>
+                            <div class="details">{{ event.lecturer }}</div>
                         </div>
                         {% endif %}
                         {% endfor %}
                     </td>
                     <!-- 9:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 9 %}
                         <div class="event-card">
                             <div class="course-code">{{ event.course_code }}</div>
-                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="details">📍 {{ event.location }}</div>
-                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
+                            <div class="time">{{ event.start_time.hour }}:{{ event.start_time.minute|stringformat:"02d" }}-{{ event.end_time.hour
+                                }}:{{ event.end_time.minute|stringformat:"02d" }}</div>
+                            <div class="details">{{ event.location }}</div>
+                            <div class="details">{{ event.lecturer }}</div>
                         </div>
                         {% endif %}
                         {% endfor %}

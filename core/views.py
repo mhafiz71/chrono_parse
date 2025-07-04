@@ -14,6 +14,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from xhtml2pdf import pisa
+from PIL import Image, ImageDraw, ImageFont
+import base64
 
 from .forms import TimetableSourceForm
 from .models import TimetableSource
@@ -310,3 +312,113 @@ def download_timetable_pdf(request):
         return response
 
     return HttpResponse("Error Generating PDF", status=500)
+
+
+@login_required
+def download_timetable_jpg(request):
+    """Generate and download timetable as JPG image"""
+    source_id = request.GET.get('source_id')
+    course_codes_str = request.GET.get('codes', '')
+    template_type = request.GET.get('template', 'modern')
+    course_codes = [normalize_course_code(
+        code) for code in course_codes_str.split(',') if code.strip()]
+
+    if not source_id or not course_codes:
+        return HttpResponse("Invalid request.", status=400)
+
+    master_schedule = get_master_schedule_data(source_id)
+    student_events = [e for e in master_schedule if e.get(
+        'normalized_code') in course_codes]
+
+    try:
+        source = TimetableSource.objects.get(id=source_id)
+    except TimetableSource.DoesNotExist:
+        return HttpResponse("Timetable source not found.", status=404)
+
+    # Create image using PIL
+    img_width, img_height = 1200, 800
+    img = Image.new('RGB', (img_width, img_height), color='white')
+    draw = ImageDraw.Draw(img)
+
+    try:
+        # Try to use a better font
+        title_font = ImageFont.truetype("arial.ttf", 24)
+        header_font = ImageFont.truetype("arial.ttf", 16)
+        text_font = ImageFont.truetype("arial.ttf", 12)
+    except:
+        # Fallback to default font
+        title_font = ImageFont.load_default()
+        header_font = ImageFont.load_default()
+        text_font = ImageFont.load_default()
+
+    # Draw title
+    title = f"My Timetable - {source.display_name}"
+    draw.text((50, 30), title, fill='black', font=title_font)
+
+    # Draw table headers
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    times = ["8:00", "9:00", "10:00", "11:00", "12:00",
+             "13:00", "14:00", "15:00", "16:00", "17:00"]
+
+    cell_width = 110
+    cell_height = 120
+    start_x, start_y = 50, 80
+
+    # Draw time headers
+    for i, time_slot in enumerate(times):
+        x = start_x + (i + 1) * cell_width
+        draw.rectangle([x, start_y, x + cell_width, start_y + 40],
+                       outline='black', fill='#667eea')
+        draw.text((x + 10, start_y + 10), time_slot,
+                  fill='white', font=header_font)
+
+    # Draw day rows and events
+    days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    event_objects = [EventObject(e) for e in student_events]
+    schedule = {day: sorted([e for e in event_objects if e.day == day],
+                            key=lambda x: x.start_time) for day in days_of_week}
+
+    for day_idx, day in enumerate(days):
+        y = start_y + 40 + day_idx * cell_height
+
+        # Draw day header
+        draw.rectangle([start_x, y, start_x + cell_width, y +
+                       cell_height], outline='black', fill='#4a5568')
+        draw.text((start_x + 10, y + 50), day, fill='white', font=header_font)
+
+        # Draw time slots for this day
+        day_events = schedule.get(day, [])
+        for time_idx in range(len(times)):
+            x = start_x + (time_idx + 1) * cell_width
+            draw.rectangle([x, y, x + cell_width, y + cell_height],
+                           outline='black', fill='#fafafa')
+
+            # Find events for this time slot
+            hour = time_idx + 8
+            for event in day_events:
+                if event.start_time.hour == hour:
+                    # Draw event
+                    draw.rectangle([x + 5, y + 5, x + cell_width - 5, y + cell_height - 5],
+                                   outline='#667eea', fill='#667eea')
+
+                    # Draw event text
+                    course_text = event.course_code
+                    time_text = f"{event.start_time.hour}:{event.start_time.minute:02d}-{event.end_time.hour}:{event.end_time.minute:02d}"
+                    location_text = event.location[:15] if len(
+                        event.location) > 15 else event.location
+
+                    draw.text((x + 10, y + 15), course_text,
+                              fill='white', font=text_font)
+                    draw.text((x + 10, y + 35), time_text,
+                              fill='white', font=text_font)
+                    draw.text((x + 10, y + 55), location_text,
+                              fill='white', font=text_font)
+
+    # Save image to BytesIO
+    img_buffer = BytesIO()
+    img.save(img_buffer, format='JPEG', quality=95)
+    img_buffer.seek(0)
+
+    response = HttpResponse(img_buffer.getvalue(), content_type='image/jpeg')
+    response['Content-Disposition'] = 'attachment; filename="my_timetable.jpg"'
+    return response

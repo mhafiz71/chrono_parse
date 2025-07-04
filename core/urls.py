@@ -1,7 +1,7 @@
 # core/urls.py
 from django.urls import path
 from django.shortcuts import redirect
-from .views import AdminDashboardView, StudentDashboardView, download_timetable_pdf
+from .views import AdminDashboardView, StudentDashboardView, download_timetable_pdf, download_timetable_jpg
 
 
 def home_redirect(request):
