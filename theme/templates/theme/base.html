@@ -1,0 +1,361 @@
+<!-- theme/templates/theme/base.html -->
+{% load static %}
+{% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en" x-data="themeManager()" :class="theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ChronoParse{% endblock %}</title>
+    {% tailwind_css %}
+    <style>
+        /* Theme Variables */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: rgba(255, 255, 255, 0.05);
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --background: #0a0a0a;
+            --divider: rgba(255, 255, 255, 0.1);
+            --toggle-off: #374151;
+        }
+
+        .light {
+            --bg-primary: #ffffff;
+            --bg-secondary: rgba(0, 0, 0, 0.05);
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --background: #ffffff;
+            --divider: rgba(0, 0, 0, 0.1);
+            --toggle-off: #d1d5db;
+        }
+
+        /* Modern Theme Styles */
+        body {
+            background: var(--bg-primary);
+            min-height: 100vh;
+            position: relative;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Grid pattern background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .light body::before {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+        }
+
+        /* Glass morphism utility classes */
+        .glass {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Light theme glass overrides */
+        .light .glass {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .light .glass-strong {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .light .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .light .glass-dark {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* Modern button styles */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-color), #1d4ed8);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: white;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+        }
+
+        /* Light theme button overrides */
+        .light .btn-secondary {
+            background: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: var(--text-primary) !important;
+        }
+
+        .light .btn-secondary:hover {
+            background: rgba(0, 0, 0, 0.1);
+            border-color: rgba(0, 0, 0, 0.2);
+            color: var(--text-primary) !important;
+        }
+
+        /* Light theme text overrides */
+        .light .text-white {
+            color: var(--text-primary) !important;
+        }
+
+        .light .text-gray-300,
+        .light .text-gray-400 {
+            color: var(--text-secondary) !important;
+        }
+
+        /* Login-specific styles */
+        .login-card {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+        }
+
+        .login-input {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .login-input:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            outline: none;
+        }
+
+        .light .login-input:focus {
+            background: rgba(0, 0, 0, 0.03);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .login-input::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+        .login-button {
+            background: linear-gradient(135deg, var(--accent-color), #1d4ed8);
+            border: none;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+        }
+
+        .login-button:hover {
+            background: linear-gradient(135deg, var(--accent-hover), #1e40af);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        /* Utility classes for login */
+        .text-primary {
+            color: var(--text-primary) !important;
+        }
+
+        .text-secondary {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-accent {
+            color: var(--accent-color) !important;
+        }
+
+        .text-accent-hover:hover {
+            color: var(--accent-hover) !important;
+        }
+
+        .bg-background {
+            background-color: var(--background);
+        }
+
+        .border-divider {
+            border-color: var(--divider);
+        }
+
+        .bg-accent {
+            background-color: var(--accent-color);
+        }
+
+        .bg-toggle-off {
+            background-color: var(--toggle-off);
+        }
+
+        .focus\\:ring-offset-background:focus {
+            --tw-ring-offset-color: var(--background);
+        }
+
+        /* Input styles */
+        .input-modern {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .input-modern:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            outline: none;
+        }
+
+        .input-modern::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+        /* Light theme input overrides */
+        .light .input-modern {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .light .input-modern:focus {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Card hover effects */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Subtle animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans text-white">
+
+    {% include "theme/partials/_navbar.html" %}
+
+    <!-- Django Messages Framework -->
+    {% if messages %}
+    <div class="container mx-auto px-4 mt-4 space-y-3">
+        {% for message in messages %}
+        <div class="glass px-6 py-4 rounded-xl relative text-sm {% if message.tags == 'success safe' %}border-green-400 text-green-100{% elif message.tags == 'error' %}border-red-400 text-red-100{% else %}border-blue-400 text-blue-100{% endif %} shadow-lg" role="alert">
+            <!-- --- CHANGE: Use the 'safe' filter for specific messages --- -->
+            {% if 'safe' in message.tags %}
+                {{ message|safe }}
+            {% else %}
+                {{ message }}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- Theme Manager Script -->
+    <script>
+        function themeManager() {
+            return {
+                theme: localStorage.getItem('theme') || 'dark',
+
+                init() {
+                    this.updateTheme();
+                },
+
+                toggleTheme() {
+                    this.theme = this.theme === 'dark' ? 'light' : 'dark';
+                    this.updateTheme();
+                },
+
+                updateTheme() {
+                    localStorage.setItem('theme', this.theme);
+                    document.documentElement.className = this.theme;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
