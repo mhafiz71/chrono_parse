@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-import os
 from pathlib import Path
 from decouple import config
 
@@ -161,13 +160,6 @@ if not DEBUG:
     # For PostgreSQL, you would configure it here
     pass
 
-# Celery configuration (optional for production)
-CELERY_BROKER_URL = config(
-    'CELERY_BROKER_URL', default='redis://localhost:6379/0')
-CELERY_RESULT_BACKEND = config(
-    'CELERY_RESULT_BACKEND', default='redis://localhost:6379/0')
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
+# Celery configuration removed for traditional deployment
 
 LOGIN_REDIRECT_URL = '/'
