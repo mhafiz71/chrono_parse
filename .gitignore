@@ -13,3 +13,4 @@ test_pdf_processing.py
 test_pdf_templates.py
 test_requests_upload.py
 test_template_features.py
+DEPLOYMENT.md
