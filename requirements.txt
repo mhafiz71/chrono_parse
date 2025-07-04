@@ -1,4 +1,4 @@
-﻿Django==5.2.3
+Django==5.2.3
 gunicorn==23.0.0
 pdfplumber==0.11.7
 xhtml2pdf==0.2.17
