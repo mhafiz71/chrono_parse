@@ -76,57 +76,66 @@
         .day-header {
             background: #4a5568;
             color: white;
-            font-weight: 600;
+            font-weight: 700;
             text-align: center;
-            width: 60px;
-            font-size: 7pt;
+            width: 120px;
+            font-size: 13pt;
+            padding: 15px 8px;
         }
 
-        .period-header {
+        .time-header {
             background: #e9ecef;
             color: #495057;
             font-weight: 600;
             text-align: center;
-            min-width: 60px;
-            font-size: 6pt;
+            min-width: 100px;
+            font-size: 11pt;
+            padding: 12px 6px;
         }
 
-        .period-slot {
-            width: 60px;
+        .time-slot {
+            min-width: 120px;
             vertical-align: top;
-            min-height: 30px;
-            text-align: center;
-            padding: 2px;
+            min-height: 100px;
+            text-align: left;
+            padding: 12px 8px;
+            background: #fafafa;
         }
 
         .event-item {
-            padding: 3px 0;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 2px;
+            padding: 8px 6px;
+            border: 1px solid #ddd;
+            margin: 2px;
+            background: #f8f9fa;
+            border-radius: 3px;
+            text-align: left;
         }
 
         .event-item:last-child {
-            border-bottom: none;
             margin-bottom: 0;
         }
 
         .course-code {
-            font-weight: 600;
-            font-size: 6pt;
-            margin-bottom: 1px;
+            font-weight: 700;
+            font-size: 10pt;
+            margin-bottom: 3px;
             color: #333;
+            display: block;
         }
 
         .time {
-            font-size: 5pt;
+            font-size: 8pt;
             color: #666;
-            margin-bottom: 1px;
+            margin-bottom: 2px;
+            display: block;
         }
 
         .details {
-            font-size: 5pt;
+            font-size: 8pt;
             color: #888;
-            margin-bottom: 0px;
+            margin-bottom: 1px;
+            display: block;
+            line-height: 1.2;
         }
 
         .no-classes {
@@ -162,16 +171,16 @@
             <thead>
                 <tr>
                     <th class="day-header">Day</th>
-                    <th class="period-header">8:00 AM</th>
-                    <th class="period-header">9:00 AM</th>
-                    <th class="period-header">10:00 AM</th>
-                    <th class="period-header">11:00 AM</th>
-                    <th class="period-header">12:00 PM</th>
-                    <th class="period-header">1:00 PM</th>
-                    <th class="period-header">2:00 PM</th>
-                    <th class="period-header">3:00 PM</th>
-                    <th class="period-header">4:00 PM</th>
-                    <th class="period-header">5:00 PM</th>
+                    <th class="time-header">8:00 AM</th>
+                    <th class="time-header">9:00 AM</th>
+                    <th class="time-header">10:00 AM</th>
+                    <th class="time-header">11:00 AM</th>
+                    <th class="time-header">12:00 PM</th>
+                    <th class="time-header">1:00 PM</th>
+                    <th class="time-header">2:00 PM</th>
+                    <th class="time-header">3:00 PM</th>
+                    <th class="time-header">4:00 PM</th>
+                    <th class="time-header">5:00 PM</th>
                 </tr>
             </thead>
             <tbody>
@@ -179,7 +188,7 @@
                 <tr>
                     <td class="day-header">{{ day }}</td>
                     <!-- 8:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 8 %}
                         <div class="event-item">
@@ -192,7 +201,7 @@
                         {% endfor %}
                     </td>
                     <!-- 9:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 9 %}
                         <div class="event-item">
@@ -205,7 +214,7 @@
                         {% endfor %}
                     </td>
                     <!-- 10:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 10 %}
                         <div class="event-item">

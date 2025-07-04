@@ -14,3 +14,4 @@ test_pdf_templates.py
 test_requests_upload.py
 test_template_features.py
 DEPLOYMENT.md
+TIMETABLE_IMPROVEMENTS.md
