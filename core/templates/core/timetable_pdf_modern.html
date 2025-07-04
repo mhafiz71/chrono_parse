@@ -209,10 +209,9 @@
                         {% if event.start_time.hour == 8 %}
                         <div class="event-card">
                             <div class="course-code">{{ event.course_code }}</div>
-                            <div class="time">{{ event.start_time.hour }}:{{ event.start_time.minute|stringformat:"02d" }}-{{ event.end_time.hour
-                                }}:{{ event.end_time.minute|stringformat:"02d" }}</div>
-                            <div class="details">{{ event.location }}</div>
-                            <div class="details">{{ event.lecturer }}</div>
+                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
+                            <div class="details">📍 {{ event.location }}</div>
+                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
                         </div>
                         {% endif %}
                         {% endfor %}
@@ -223,10 +222,9 @@
                         {% if event.start_time.hour == 9 %}
                         <div class="event-card">
                             <div class="course-code">{{ event.course_code }}</div>
-                            <div class="time">{{ event.start_time.hour }}:{{ event.start_time.minute|stringformat:"02d" }}-{{ event.end_time.hour
-                                }}:{{ event.end_time.minute|stringformat:"02d" }}</div>
-                            <div class="details">{{ event.location }}</div>
-                            <div class="details">{{ event.lecturer }}</div>
+                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
+                            <div class="details">📍 {{ event.location }}</div>
+                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
                         </div>
                         {% endif %}
                         {% endfor %}

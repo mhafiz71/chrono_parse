@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Your Timetable - ChronoParse (Neon)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timetable - Neon</title>
     <style>
-        @page { size: A4 landscape; margin: 0.5cm; }
+        @page {
+            size: A4 landscape;
+            margin: 0.5in;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: "Courier New", "Monaco", monospace;
+            font-family: 'Courier New', monospace;
+            font-size: 7pt;
+            line-height: 1.2;
             color: #00ff88;
             background: #0a0a0a;
-            margin: 0;
-            padding: 10px;
-            font-size: 7pt;
         }
 
         .container {
+            width: 100%;
+            max-width: 100%;
             background: #111;
             border: 2px solid #00ff88;
             padding: 15px;
-            height: 95vh;
-            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
         }
 
         .header {
@@ -29,159 +40,161 @@
             padding-bottom: 8px;
         }
 
-        h1 {
-            color: #00ff88;
-            font-size: 1.6em;
+        .title {
+            font-size: 16pt;
             font-weight: 700;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
+            color: #00ff88;
+            margin-bottom: 3px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
         }
 
-        h2 {
+        .subtitle {
+            font-size: 9pt;
             color: #00ccff;
-            font-weight: 400;
-            font-size: 0.9em;
-            margin: 0;
-            text-shadow: 0 0 3px rgba(0, 204, 255, 0.5);
+            margin-bottom: 2px;
+            text-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
         }
 
-        .generated-info {
-            text-align: center;
+        .generated-by {
+            font-size: 7pt;
             color: #ffff00;
             font-size: 0.6em;
             margin-bottom: 10px;
             text-shadow: 0 0 2px rgba(255, 255, 0, 0.3);
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
         }
 
         table {
             width: 100%;
-            border-collapse: separate;
-            border-spacing: 1px;
-            font-size: 6pt;
-        }
-
-        th, td {
-            padding: 4px 3px;
-            text-align: left;
-            font-size: 6pt;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            table-layout: fixed;
             border: 1px solid #00ff88;
         }
 
         th {
             background: #001a0f;
             color: #00ff88;
+            padding: 5px 3px;
+            text-align: center;
             font-weight: 600;
             font-size: 7pt;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-shadow: 0 0 3px rgba(0, 255, 136, 0.5);
+            border: 1px solid #00ff88;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
         }
 
         .day-header {
-            background: #1a1a1a;
+            width: 12%;
+            background: #001a0f;
+            font-weight: 600;
+        }
+
+        .time-header {
+            width: 8.8%;
+            background: #001a0f;
+            font-size: 6pt;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+
+        td {
+            border: 1px solid #00ff88;
+            vertical-align: top;
+            padding: 2px;
+        }
+
+        .day-cell {
+            background: #001a0f;
             color: #00ff88;
             font-weight: 600;
             text-align: center;
-            width: 60px;
+            padding: 6px 3px;
             font-size: 7pt;
-            text-shadow: 0 0 3px rgba(0, 255, 136, 0.5);
-        }
-
-        .period-header {
-            background: #001a0f;
-            color: #00ccff;
-            font-weight: 600;
-            text-align: center;
-            min-width: 60px;
-            font-size: 6pt;
-            text-shadow: 0 0 3px rgba(0, 204, 255, 0.5);
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
         }
 
         .period-slot {
-            width: 60px;
+            min-width: 120px;
             vertical-align: top;
-            background: #0a0a0a;
-            min-height: 30px;
+            min-height: 50px;
             text-align: center;
-            padding: 2px;
+            padding: 3px 2px;
+            background: #0a0a0a;
         }
 
         .event-card {
             background: #001a0f;
             color: #00ff88;
-            padding: 3px;
-            margin-bottom: 2px;
+            padding: 6px 4px;
+            margin: 2px;
             border: 1px solid #00ff88;
-            border-radius: 2px;
-            box-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
-            font-size: 6pt;
-            line-height: 1.1;
+            border-radius: 3px;
+            text-align: left;
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
         }
 
         .course-code {
             font-weight: 700;
-            font-size: 6pt;
-            margin-bottom: 1px;
+            font-size: 8pt;
+            margin-bottom: 2px;
             color: #00ccff;
-            text-shadow: 0 0 2px rgba(0, 204, 255, 0.5);
+            display: block;
+            text-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
         }
 
         .time {
-            font-size: 5pt;
+            font-size: 6pt;
             color: #ffff00;
             margin-bottom: 1px;
-            font-weight: 500;
+            display: block;
+            text-shadow: 0 0 3px rgba(255, 255, 0, 0.5);
         }
 
         .details {
-            font-size: 5pt;
+            font-size: 6pt;
             color: #00ff88;
-            margin-bottom: 0px;
-            opacity: 0.8;
+            margin-bottom: 1px;
+            display: block;
         }
 
         .no-classes {
             text-align: center;
-            color: #444;
+            color: #666;
             font-style: italic;
-            padding: 30px 15px;
-            font-size: 9pt;
+            padding: 15px;
+            font-size: 6pt;
         }
 
         .footer {
             text-align: center;
-            margin-top: 20px;
-            color: #666;
-            font-size: 7pt;
+            margin-top: 15px;
+            padding-top: 8px;
             border-top: 1px solid #00ff88;
-            padding-top: 10px;
-        }
-
-        .glow {
-            text-shadow: 0 0 5px currentColor;
+            font-size: 6pt;
+            color: #00ff88;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="glow">⚡ MY TIMETABLE ⚡</h1>
-            <h2>{{ source_name }}</h2>
-        </div>
-
-        <div class="generated-info">
-            Generated by ChronoParse AI • {{ "now"|date:"F j, Y \a\t g:i A" }}
+            <div class="title">⚡ MY TIMETABLE ⚡</div>
+            <div class="subtitle">{{ source_name }} - Second Semester</div>
+            <div class="generated-by">Generated by ChronoParse AI</div>
         </div>
 
         <table>
             <thead>
                 <tr>
-                    <th class="day-header glow">DAY</th>
-                    <th class="period-header glow">8:00 AM</th>
-                    <th class="period-header glow">9:00 AM</th>
-                    <th class="period-header glow">10:00 AM</th>
-                    <th class="period-header glow">11:00 AM</th>
-                    <th class="period-header glow">12:00 PM</th>
+                    <th class="day-header">Day</th>
+                    <th class="time-header">8:00 AM</th>
+                    <th class="time-header">9:00 AM</th>
+                    <th class="time-header">10:00 AM</th>
+                    <th class="time-header">11:00 AM</th>
+                    <th class="time-header">12:00 PM</th>
                     <th class="period-header glow">1:00 PM</th>
                     <th class="period-header glow">2:00 PM</th>
                     <th class="period-header glow">3:00 PM</th>
