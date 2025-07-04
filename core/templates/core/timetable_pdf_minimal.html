@@ -96,9 +96,9 @@
         .time-slot {
             min-width: 120px;
             vertical-align: top;
-            min-height: 100px;
-            text-align: left;
-            padding: 12px 8px;
+            min-height: 60px;
+            text-align: center;
+            padding: 4px 2px;
             background: #fafafa;
         }
 
@@ -227,7 +227,7 @@
                         {% endfor %}
                     </td>
                     <!-- 11:00 AM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 11 %}
                         <div class="event-item">
@@ -240,7 +240,7 @@
                         {% endfor %}
                     </td>
                     <!-- 12:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 12 %}
                         <div class="event-item">
@@ -253,7 +253,7 @@
                         {% endfor %}
                     </td>
                     <!-- 1:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 13 %}
                         <div class="event-item">
@@ -266,7 +266,7 @@
                         {% endfor %}
                     </td>
                     <!-- 2:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 14 %}
                         <div class="event-item">
@@ -279,7 +279,7 @@
                         {% endfor %}
                     </td>
                     <!-- 3:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 15 %}
                         <div class="event-item">
@@ -292,7 +292,7 @@
                         {% endfor %}
                     </td>
                     <!-- 4:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 16 %}
                         <div class="event-item">
@@ -305,7 +305,7 @@
                         {% endfor %}
                     </td>
                     <!-- 5:00 PM -->
-                    <td class="period-slot">
+                    <td class="time-slot">
                         {% for event in events %}
                         {% if event.start_time.hour == 17 %}
                         <div class="event-item">
