@@ -124,6 +124,18 @@ def parse_master_timetable(source):
     """Parses a master timetable JSON and returns a list of event dictionaries."""
     events = []
     try:
+        # Check if the file exists before trying to open it
+        if not source.source_json or not source.source_json.path:
+            print(f"Error: No JSON file associated with source {source.id}")
+            return events
+
+        # Check if the file exists on the filesystem
+        import os
+        if not os.path.exists(source.source_json.path):
+            print(
+                f"Error: JSON file not found at {source.source_json.path} for source {source.id}")
+            return events
+
         with open(source.source_json.path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             for item in data:
@@ -146,6 +158,10 @@ def parse_master_timetable(source):
                     'details': details,
                     'lecturer': item.get("Instructor(s)", ""),
                 })
+    except FileNotFoundError as e:
+        print(f"Error: JSON file not found for source {source.id}: {e}")
+    except json.JSONDecodeError as e:
+        print(f"Error: Invalid JSON format in source {source.id}: {e}")
     except Exception as e:
         print(f"Error parsing master JSON {source.id}: {e}")
     return events
@@ -167,6 +183,11 @@ def get_master_schedule_data(source_id):
             cache.set(cache_key, schedule_data, 3600)  # Cache for 1 hour
         return schedule_data
     except TimetableSource.DoesNotExist:
+        print(f"Error: TimetableSource with id {source_id} does not exist")
+        return []
+    except Exception as e:
+        print(
+            f"Error retrieving master schedule data for source {source_id}: {e}")
         return []
 
 # AdminDashboardView has no major changes
@@ -248,6 +269,12 @@ class StudentDashboardView(LoginRequiredMixin, View):
             return render(request, 'core/student_dashboard.html', {'sources': sources})
 
         master_schedule = get_master_schedule_data(source_id)
+
+        # Check if master schedule data is available
+        if not master_schedule:
+            messages.error(
+                request, 'The selected timetable source is not available or the file is missing. Please contact the administrator or try a different timetable source.')
+            return render(request, 'core/student_dashboard.html', {'sources': sources})
 
         # Filter matching events
         student_events = []
@@ -340,92 +367,209 @@ def download_timetable_jpg(request):
         return HttpResponse("Invalid request.", status=400)
 
     master_schedule = get_master_schedule_data(source_id)
+
+    # Check if master schedule data is available
+    if not master_schedule:
+        return HttpResponse("No timetable data available for the selected source.", status=404)
+
     student_events = [e for e in master_schedule if e.get(
         'normalized_code') in course_codes]
+
+    # Debug: Check if we have any matching events
+    if not student_events:
+        return HttpResponse(f"No matching courses found. Available courses: {[e.get('normalized_code', 'N/A') for e in master_schedule[:5]]}", status=404)
 
     try:
         source = TimetableSource.objects.get(id=source_id)
     except TimetableSource.DoesNotExist:
         return HttpResponse("Timetable source not found.", status=404)
 
-    # Create image using PIL
-    img_width, img_height = 1200, 800
-    img = Image.new('RGB', (img_width, img_height), color='white')
+    # Create image using PIL - Minimal-inspired design
+    img_width, img_height = 1400, 900
+    # Light background like minimal
+    img = Image.new('RGB', (img_width, img_height), color='#fafafa')
     draw = ImageDraw.Draw(img)
 
     try:
-        # Try to use a better font
-        title_font = ImageFont.truetype("arial.ttf", 24)
-        header_font = ImageFont.truetype("arial.ttf", 16)
-        text_font = ImageFont.truetype("arial.ttf", 12)
+        # Try to use a better font with different sizes for hierarchy
+        title_font = ImageFont.truetype("arial.ttf", 28)
+        subtitle_font = ImageFont.truetype("arial.ttf", 16)
+        header_font = ImageFont.truetype("arial.ttf", 14)
+        text_font = ImageFont.truetype("arial.ttf", 11)
+        small_font = ImageFont.truetype("arial.ttf", 9)
     except:
         # Fallback to default font
         title_font = ImageFont.load_default()
+        subtitle_font = ImageFont.load_default()
         header_font = ImageFont.load_default()
         text_font = ImageFont.load_default()
+        small_font = ImageFont.load_default()
+
+    # Draw header section with minimal-inspired styling
+    header_height = 80
+
+    # Draw header background
+    draw.rectangle([0, 0, img_width, header_height],
+                   fill='white', outline='#ddd')
 
     # Draw title
-    title = f"My Timetable - {source.display_name}"
-    draw.text((50, 30), title, fill='black', font=title_font)
+    title = "My Timetable"
+    title_bbox = draw.textbbox((0, 0), title, font=title_font)
+    title_width = title_bbox[2] - title_bbox[0]
+    draw.text(((img_width - title_width) // 2, 15),
+              title, fill='#333', font=title_font)
 
-    # Draw table headers
+    # Draw subtitle
+    subtitle = f"{source.display_name} - Generated by ChronoParse AI"
+    subtitle_bbox = draw.textbbox((0, 0), subtitle, font=subtitle_font)
+    subtitle_width = subtitle_bbox[2] - subtitle_bbox[0]
+    draw.text(((img_width - subtitle_width) // 2, 50),
+              subtitle, fill='#666', font=subtitle_font)
+
+    # Draw table with minimal-inspired styling
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    times = ["8:00", "9:00", "10:00", "11:00", "12:00",
-             "13:00", "14:00", "15:00", "16:00", "17:00"]
+    times = ["8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM",
+             "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]
 
-    cell_width = 110
-    cell_height = 120
-    start_x, start_y = 50, 80
+    cell_width = 130
+    cell_height = 140
+    start_x, start_y = 30, header_height + 20
+    day_col_width = 100
 
-    # Draw time headers
+    # Draw main table border
+    table_width = day_col_width + len(times) * cell_width
+    table_height = len(days) * cell_height + 40
+    draw.rectangle([start_x, start_y, start_x + table_width, start_y + table_height],
+                   outline='#ddd', fill='white')
+
+    # Draw "Day" header
+    draw.rectangle([start_x, start_y, start_x + day_col_width, start_y + 40],
+                   outline='#ddd', fill='#e9ecef')
+    draw.text((start_x + 25, start_y + 12), "Day",
+              fill='#333', font=header_font)
+
+    # Draw time headers with minimal styling
     for i, time_slot in enumerate(times):
-        x = start_x + (i + 1) * cell_width
+        x = start_x + day_col_width + i * cell_width
         draw.rectangle([x, start_y, x + cell_width, start_y + 40],
-                       outline='black', fill='#667eea')
-        draw.text((x + 10, start_y + 10), time_slot,
-                  fill='white', font=header_font)
+                       outline='#ddd', fill='#f8f9fa')
 
-    # Draw day rows and events
+        # Center the time text
+        time_bbox = draw.textbbox((0, 0), time_slot, font=small_font)
+        time_width = time_bbox[2] - time_bbox[0]
+        draw.text((x + (cell_width - time_width) // 2, start_y + 15),
+                  time_slot, fill='#333', font=small_font)
+
+    # Draw day rows and events with minimal-inspired styling
     days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     event_objects = [EventObject(e) for e in student_events]
     schedule = {day: sorted([e for e in event_objects if e.day == day],
                             key=lambda x: x.start_time) for day in days_of_week}
 
+    # Debug: Print schedule info
+    print(f"JPG Generation - Total events: {len(event_objects)}")
+    for day, events in schedule.items():
+        print(f"{day}: {len(events)} events")
+        for event in events:
+            print(
+                f"  - {event.course_code} at {event.start_time.hour}:{event.start_time.minute:02d}")
+
     for day_idx, day in enumerate(days):
         y = start_y + 40 + day_idx * cell_height
 
-        # Draw day header
-        draw.rectangle([start_x, y, start_x + cell_width, y +
-                       cell_height], outline='black', fill='#4a5568')
-        draw.text((start_x + 10, y + 50), day, fill='white', font=header_font)
+        # Draw day header with minimal styling
+        draw.rectangle([start_x, y, start_x + day_col_width, y + cell_height],
+                       outline='#ddd', fill='#f8f9fa')
+
+        # Center day text vertically
+        day_bbox = draw.textbbox((0, 0), day.upper(), font=header_font)
+        day_height = day_bbox[3] - day_bbox[1]
+        draw.text((start_x + 15, y + (cell_height - day_height) // 2),
+                  day.upper(), fill='#333', font=header_font)
 
         # Draw time slots for this day
         day_events = schedule.get(day, [])
         for time_idx in range(len(times)):
-            x = start_x + (time_idx + 1) * cell_width
+            x = start_x + day_col_width + time_idx * cell_width
+
+            # Draw cell background
             draw.rectangle([x, y, x + cell_width, y + cell_height],
-                           outline='black', fill='#fafafa')
+                           outline='#ddd', fill='#fafafa')
 
-            # Find events for this time slot
+            # Find events for this time slot (more flexible matching)
             hour = time_idx + 8
+            events_in_slot = []
+
             for event in day_events:
-                if event.start_time.hour == hour:
-                    # Draw event
-                    draw.rectangle([x + 5, y + 5, x + cell_width - 5, y + cell_height - 5],
-                                   outline='#667eea', fill='#667eea')
+                # Check if event starts within this hour or overlaps with it
+                if (event.start_time.hour == hour or
+                    (event.start_time.hour < hour and event.end_time.hour > hour) or
+                        (event.start_time.hour < hour and event.end_time.hour == hour)):
+                    events_in_slot.append(event)
 
-                    # Draw event text
-                    course_text = event.course_code
-                    time_text = f"{event.start_time.hour}:{event.start_time.minute:02d}-{event.end_time.hour}:{event.end_time.minute:02d}"
-                    location_text = event.location[:15] if len(
-                        event.location) > 15 else event.location
+            if events_in_slot:
+                # Draw the first event in this time slot
+                event = events_in_slot[0]
 
-                    draw.text((x + 10, y + 15), course_text,
-                              fill='white', font=text_font)
-                    draw.text((x + 10, y + 35), time_text,
-                              fill='white', font=text_font)
-                    draw.text((x + 10, y + 55), location_text,
-                              fill='white', font=text_font)
+                # Draw event card with minimal styling
+                card_margin = 8
+                draw.rectangle([x + card_margin, y + card_margin,
+                               x + cell_width - card_margin, y + cell_height - card_margin],
+                               outline='#ddd', fill='#f8f9fa')
+
+                # Add subtle shadow effect
+                draw.rectangle([x + card_margin + 2, y + card_margin + 2,
+                               x + cell_width - card_margin + 2, y + cell_height - card_margin + 2],
+                               outline='#e0e0e0', fill='#e0e0e0')
+                draw.rectangle([x + card_margin, y + card_margin,
+                               x + cell_width - card_margin, y + cell_height - card_margin],
+                               outline='#ddd', fill='#f8f9fa')
+
+                # Draw event content with proper spacing
+                text_x = x + card_margin + 8
+
+                # Course code (bold)
+                draw.text((text_x, y + card_margin + 8), event.course_code,
+                          fill='#333', font=text_font)
+
+                # Time
+                time_text = f"{event.start_time.hour}:{event.start_time.minute:02d}-{event.end_time.hour}:{event.end_time.minute:02d}"
+                draw.text((text_x, y + card_margin + 28), time_text,
+                          fill='#666', font=small_font)
+
+                # Location with icon-like prefix
+                location_text = event.location[:18] if len(
+                    event.location) > 18 else event.location
+                draw.text((text_x, y + card_margin + 45), f"📍 {location_text}",
+                          fill='#777', font=small_font)
+
+                # Lecturer with icon-like prefix
+                lecturer_text = event.lecturer[:18] if len(
+                    event.lecturer) > 18 else event.lecturer
+                if lecturer_text:
+                    draw.text((text_x, y + card_margin + 62), f"👨‍🏫 {lecturer_text}",
+                              fill='#777', font=small_font)
+            else:
+                # No events in this time slot - show empty state
+                empty_text = "Free"
+                empty_bbox = draw.textbbox((0, 0), empty_text, font=small_font)
+                empty_width = empty_bbox[2] - empty_bbox[0]
+                draw.text((x + (cell_width - empty_width) // 2, y + cell_height // 2),
+                          empty_text, fill='#ccc', font=small_font)
+
+    # Draw footer with minimal styling
+    footer_y = start_y + table_height + 20
+    footer_text = "Powered by ChronoParse - Your AI Timetable Assistant"
+    footer_bbox = draw.textbbox((0, 0), footer_text, font=small_font)
+    footer_width = footer_bbox[2] - footer_bbox[0]
+
+    # Draw footer border
+    draw.line([start_x, footer_y, start_x + table_width,
+              footer_y], fill='#ddd', width=1)
+
+    # Center footer text
+    draw.text(((img_width - footer_width) // 2, footer_y + 10),
+              footer_text, fill='#999', font=small_font)
 
     # Save image to BytesIO
     img_buffer = BytesIO()
@@ -433,5 +577,5 @@ def download_timetable_jpg(request):
     img_buffer.seek(0)
 
     response = HttpResponse(img_buffer.getvalue(), content_type='image/jpeg')
-    response['Content-Disposition'] = 'attachment; filename="my_timetable.jpg"'
+    response['Content-Disposition'] = 'attachment; filename="my_timetable_minimal.jpg"'
     return response
