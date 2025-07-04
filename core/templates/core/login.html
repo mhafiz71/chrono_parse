@@ -3,13 +3,13 @@
 
 {% block content %}
 <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full">
+    <div class="w-80 max-w-[20rem]">
         <!-- Login Form Card -->
-        <div class="login-card p-8 rounded-lg">
+        <div class="login-card p-8 rounded-xl shadow-lg border border-gray-200">
             <!-- Header -->
             <div class="text-center mb-8">
-                <h1 class="text-3xl font-bold text-primary mb-2">Welcome back</h1>
-                <p class="text-secondary text-base">Sign in to your ChronoParse account</p>
+                <h1 class="text-2xl font-bold text-primary mb-2">Welcome back</h1>
+                <p class="text-secondary text-sm">Sign in to your ChronoParse account</p>
             </div>
             <form method="post" class="space-y-6" x-data="{ rememberMe: false }">
                 {% csrf_token %}
@@ -22,7 +22,7 @@
                         name="username"
                         id="username"
                         required
-                        class="login-input block w-full px-4 py-3 rounded-lg"
+                        class="login-input block w-full px-3 py-2.5 rounded-lg text-sm"
                         placeholder="alex.jordan@gmail.com"
                         value="">
                 </div>
@@ -35,7 +35,7 @@
                         name="password"
                         id="password"
                         required
-                        class="login-input block w-full px-4 py-3 rounded-lg"
+                        class="login-input block w-full px-3 py-2.5 rounded-lg text-sm"
                         placeholder="••••••••">
                 </div>
 
@@ -49,17 +49,17 @@
                 <!-- Remember Me Toggle -->
                 <div class="flex items-center justify-between">
                     <label class="flex items-center text-secondary text-sm">
-                        <span>Remember sign in details</span>
+                        <span>Remember me</span>
                     </label>
                     <div class="toggle-switch">
                         <button
                             type="button"
                             @click="rememberMe = !rememberMe"
                             :class="rememberMe ? 'bg-accent' : 'bg-toggle-off'"
-                            class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background">
+                            class="relative inline-flex h-5 w-9 items-center rounded-full transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background">
                             <span
-                                :class="rememberMe ? 'translate-x-6' : 'translate-x-1'"
-                                class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 ease-in-out">
+                                :class="rememberMe ? 'translate-x-5' : 'translate-x-1'"
+                                class="inline-block h-3 w-3 transform rounded-full bg-white transition-transform duration-200 ease-in-out">
                             </span>
                         </button>
                     </div>
@@ -67,9 +67,9 @@
 
                 <!-- Error Messages -->
                 {% if form.errors %}
-                <div class="error-message rounded-lg p-4">
+                <div class="error-message rounded-lg p-3">
                     <div class="flex">
-                        <svg class="h-5 w-5 text-red-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="h-4 w-4 text-red-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         <div class="text-red-300 text-sm">
@@ -84,12 +84,12 @@
                 {% endif %}
 
                 <!-- Submit Button -->
-                <button type="submit" class="login-button w-full py-3 px-4 rounded-lg font-semibold text-white transition-all duration-200">
+                <button type="submit" class="login-button w-full py-2.5 px-4 rounded-lg font-semibold text-white transition-all duration-200 text-sm">
                     Log in
                 </button>
 
                 <!-- Divider -->
-                <div class="relative my-6">
+                <div class="relative my-5">
                     <div class="absolute inset-0 flex items-center">
                         <div class="w-full border-t border-divider"></div>
                     </div>

@@ -13,6 +13,8 @@ from django.views import View
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
 from xhtml2pdf import pisa
 from PIL import Image, ImageDraw, ImageFont
 import base64
@@ -27,6 +29,17 @@ class EventObject:
     def __init__(self, event_dict):
         for key, value in event_dict.items():
             setattr(self, key, value)
+
+
+# Custom Login View that redirects authenticated users
+class CustomLoginView(LoginView):
+    template_name = 'core/login.html'
+
+    def dispatch(self, request, *args, **kwargs):
+        # If user is already authenticated, redirect to student dashboard
+        if request.user.is_authenticated:
+            return redirect('student_dashboard')
+        return super().dispatch(request, *args, **kwargs)
 
 # --- HELPER 1: For parsing time like "7:00a - 9:55a" ---
 
