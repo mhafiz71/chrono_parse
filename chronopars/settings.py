@@ -97,20 +97,16 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL:
     # Production database (PostgreSQL on Render)
     try:
-        # Test if PostgreSQL adapter is available (psycopg or psycopg2)
-        try:
-            import psycopg
-        except ImportError:
-            import psycopg2
-
+        # Test if psycopg2 is available
+        import psycopg2
         DATABASES = {
             'default': dj_database_url.parse(DATABASE_URL)
         }
         print("✓ Using PostgreSQL database")
     except ImportError as e:
-        # Fallback to SQLite if PostgreSQL adapter is not available
+        # Fallback to SQLite if psycopg2 is not available
         print(
-            f"Warning: PostgreSQL adapter not available ({e}), falling back to SQLite")
+            f"Warning: psycopg2 not available ({e}), falling back to SQLite")
         DATABASES = {
             'default': {
                 'ENGINE': 'django.db.backends.sqlite3',
