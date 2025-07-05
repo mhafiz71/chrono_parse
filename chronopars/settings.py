@@ -91,17 +91,35 @@ AUTH_USER_MODEL = 'core.User'  # Custom user model
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# Use PostgreSQL in production (when DATABASE_URL is set), SQLite in development
-if os.environ.get('DATABASE_URL'):
+# Database configuration with fallback handling
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
+if DATABASE_URL:
     # Production database (PostgreSQL on Render)
     try:
+        # Test if PostgreSQL adapter is available (psycopg or psycopg2)
+        try:
+            import psycopg
+        except ImportError:
+            import psycopg2
+
         DATABASES = {
-            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+            'default': dj_database_url.parse(DATABASE_URL)
+        }
+        print("✓ Using PostgreSQL database")
+    except ImportError as e:
+        # Fallback to SQLite if PostgreSQL adapter is not available
+        print(
+            f"Warning: PostgreSQL adapter not available ({e}), falling back to SQLite")
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
         }
     except Exception as e:
-        # Fallback to SQLite if PostgreSQL setup fails
-        print(
-            f"Warning: PostgreSQL setup failed ({e}), falling back to SQLite")
+        # Fallback to SQLite for any other database setup issues
+        print(f"Warning: Database setup failed ({e}), falling back to SQLite")
         DATABASES = {
             'default': {
                 'ENGINE': 'django.db.backends.sqlite3',
@@ -116,6 +134,7 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+    print("✓ Using SQLite database (development)")
 
 
 # Password validation
