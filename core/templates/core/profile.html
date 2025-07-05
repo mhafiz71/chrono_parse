@@ -1,0 +1,132 @@
+{% extends "theme/base.html" %}
+{% block title %}User Profile{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-primary mb-2">User Profile</h1>
+            <p class="text-secondary">Update your personal information</p>
+        </div>
+
+        <!-- Profile Form Card -->
+        <div class="card-modern p-8 rounded-xl shadow-lg border border-gray-200">
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                <!-- User Info Display -->
+                <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4 mb-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
+                            <span class="text-white text-xl font-bold">
+                                {{ user.username|first|upper }}
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">{{ user.username }}</h3>
+                            <p class="text-secondary text-sm">Member since {{ user.date_joined|date:"F Y" }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Name Field -->
+                <div>
+                    <label for="{{ form.first_name.id_for_label }}" class="block text-sm font-medium text-secondary mb-2">
+                        First Name
+                    </label>
+                    {{ form.first_name }}
+                    {% if form.first_name.errors %}
+                        <div class="mt-1 text-red-400 text-xs">
+                            {% for error in form.first_name.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Last Name Field -->
+                <div>
+                    <label for="{{ form.last_name.id_for_label }}" class="block text-sm font-medium text-secondary mb-2">
+                        Last Name
+                    </label>
+                    {{ form.last_name }}
+                    {% if form.last_name.errors %}
+                        <div class="mt-1 text-red-400 text-xs">
+                            {% for error in form.last_name.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="{{ form.email.id_for_label }}" class="block text-sm font-medium text-secondary mb-2">
+                        Email Address
+                    </label>
+                    {{ form.email }}
+                    {% if form.email.errors %}
+                        <div class="mt-1 text-red-400 text-xs">
+                            {% for error in form.email.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Role Field -->
+                <div>
+                    <label for="{{ form.role.id_for_label }}" class="block text-sm font-medium text-secondary mb-2">
+                        Role
+                    </label>
+                    {{ form.role }}
+                    {% if form.role.errors %}
+                        <div class="mt-1 text-red-400 text-xs">
+                            {% for error in form.role.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- General Form Errors -->
+                {% if form.non_field_errors %}
+                <div class="error-message rounded-lg p-3">
+                    <div class="flex">
+                        <svg class="h-4 w-4 text-red-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div class="text-red-300 text-sm">
+                            {% for error in form.non_field_errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Action Buttons -->
+                <div class="flex space-x-4 pt-4">
+                    <button type="submit" class="btn-primary flex-1 py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200">
+                        Update Profile
+                    </button>
+                    <a href="{% url 'student_dashboard' %}" class="btn-secondary flex-1 py-3 px-6 rounded-lg font-semibold text-center transition-all duration-200">
+                        Back to Dashboard
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="mt-8 text-center">
+            <p class="text-secondary text-sm">
+                Need to change your password? 
+                <a href="#" class="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
+                    Contact administrator
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

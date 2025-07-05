@@ -20,7 +20,7 @@ from xhtml2pdf import pisa
 from PIL import Image, ImageDraw, ImageFont
 import base64
 
-from .forms import TimetableSourceForm
+from .forms import TimetableSourceForm, CustomUserCreationForm, UserProfileForm
 from .models import TimetableSource, TimetableEvent, CourseRegistrationHistory
 
 # Simple class to convert dictionary to object for template access
@@ -41,6 +41,49 @@ class CustomLoginView(LoginView):
         if request.user.is_authenticated:
             return redirect('student_dashboard')
         return super().dispatch(request, *args, **kwargs)
+
+
+# Custom Signup View
+class SignupView(View):
+    template_name = 'core/signup.html'
+    form_class = CustomUserCreationForm
+
+    def dispatch(self, request, *args, **kwargs):
+        # If user is already authenticated, redirect to student dashboard
+        if request.user.is_authenticated:
+            return redirect('student_dashboard')
+        return super().dispatch(request, *args, **kwargs)
+
+    def get(self, request):
+        form = self.form_class()
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            user = form.save()
+            messages.success(
+                request, 'Account created successfully! You can now log in.')
+            return redirect('login')
+        return render(request, self.template_name, {'form': form})
+
+
+# User Profile View
+class UserProfileView(LoginRequiredMixin, View):
+    template_name = 'core/profile.html'
+    form_class = UserProfileForm
+
+    def get(self, request):
+        form = self.form_class(instance=request.user)
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile updated successfully!')
+            return redirect('profile')
+        return render(request, self.template_name, {'form': form})
 
 # --- HELPER 1: For parsing time like "7:00a - 9:55a" ---
 

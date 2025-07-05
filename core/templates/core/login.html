@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="w-80 max-w-[20rem]">
+    <div class="w-[28rem] max-w-lg">
         <!-- Login Form Card -->
         <div class="login-card p-8 rounded-xl shadow-lg border border-gray-200">
             <!-- Header -->
@@ -102,8 +102,8 @@
                 <div class="text-center">
                     <p class="text-secondary text-sm">
                         Don't have an account?
-                        <a href="#" class="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
-                            Contact administrator
+                        <a href="{% url 'signup' %}" class="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
+                            Sign up
                         </a>
                     </p>
                 </div>

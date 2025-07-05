@@ -4,7 +4,24 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
-    pass
+    STUDENT = 'student'
+    TEACHER = 'teacher'
+    STAFF = 'staff'
+    OTHER = 'other'
+
+    ROLE_CHOICES = [
+        (STUDENT, 'Student'),
+        (TEACHER, 'Teacher'),
+        (STAFF, 'Staff'),
+        (OTHER, 'Other'),
+    ]
+
+    role = models.CharField(
+        max_length=20,
+        choices=ROLE_CHOICES,
+        default=STUDENT,
+        help_text="User role in the institution"
+    )
 
 class TimetableSource(models.Model):
     PROCESSING = 'PROCESSING'

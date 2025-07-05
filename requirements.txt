@@ -6,3 +6,5 @@ django-tailwind==4.0.1
 Pillow==11.2.1
 python-decouple==3.8
 whitenoise==6.6.0
+psycopg2-binary==2.9.7
+dj-database-url==2.1.0
