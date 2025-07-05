@@ -59,6 +59,16 @@
                     </div>
                     <h2 class="text-2xl font-semibold text-white mb-2">Upload Course Registration</h2>
                     <p class="text-gray-400">Select your timetable source and upload your PDF to get started</p>
+                    <div class="mt-4 p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <p class="text-blue-300 text-sm">Your course registrations are saved for easy reuse. Master timetables are
+                                permanently stored in our database.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <form method="post" enctype="multipart/form-data" class="space-y-6" @submit="loading = true">
@@ -73,6 +83,20 @@
                             <option value="{{ source.id }}" {% if source.id == selected_source_id %}selected{% endif %}>{{ source.display_name }}</option>
                             {% endfor %}
                         </select>
+                    </div>
+
+                    <!-- Program and Level -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="program" class="block text-sm font-medium text-gray-300 mb-2">Program</label>
+                            <input type="text" name="program" id="program" class="input-modern block w-full px-4 py-3 rounded-lg"
+                                placeholder="e.g., BSC Computer Science">
+                        </div>
+                        <div>
+                            <label for="level" class="block text-sm font-medium text-gray-300 mb-2">Level</label>
+                            <input type="text" name="level" id="level" class="input-modern block w-full px-4 py-3 rounded-lg"
+                                placeholder="e.g., Level 200, Year 2">
+                        </div>
                     </div>
 
                     <!-- File Upload -->
@@ -115,9 +139,86 @@
                     </div>
             </form>
         </div>
+<!-- Course Registration History Section -->
+{% if history %}
+<div class="max-w-2xl mx-auto mt-16">
+    <div class="glass-card p-6 rounded-lg card-hover fade-in">
+        <div class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-white">Recent Course Registrations</h3>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">Quickly reuse your previous course registrations</p>
+
+        <div class="space-y-3">
+            {% for item in history %}
+            <div
+                class="flex items-center justify-between p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-200">
+                <div class="flex-1">
+                    {% if item.program or item.level %}
+                    <div class="flex items-center space-x-2 mb-1">
+                        {% if item.program %}
+                        <span
+                            class="inline-flex items-center px-2 py-1 rounded bg-purple-500/20 text-purple-300 text-xl font-medium">
+                            {{ item.program }}
+                        </span>
+                        {% endif %}
+                        {% if item.level %}
+                        <span
+                            class="inline-flex items-center px-2 py-1 rounded bg-blue-500/20 text-blue-300 text-xl font-medium">
+                            Level {{ item.level }}
+                        </span>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    <h4 class="text-white font-medium text-sm">{{ item.source.display_name }}</h4>
+                    <div class="flex items-center text-gray-400 text-xs mt-1 space-x-3">
+                        <span>{{ item.get_course_count }} course{{ item.get_course_count|pluralize }}</span>
+                        <span>•</span>
+                        <span>{{ item.last_used|date:"M j, Y" }}</span>
+                        <span>•</span>
+                        <span>{{ item.last_used|date:"g:i A" }}</span>
+                    </div>
+                </div>
+                <a href="{% url 'reuse_course_registration' item.id %}"
+                    class="inline-flex items-center px-3 py-1 bg-purple-500/20 text-purple-300 text-xs font-medium rounded-lg hover:bg-purple-500/30 transition-colors duration-200">
+                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                        </path>
+                    </svg>
+                    Reuse
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
         {% endif %}
 
         {% if schedule %}
+        <!-- Storage Confirmation Message -->
+        <div class="max-w-4xl mx-auto mb-6">
+            <div class="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <p class="text-green-300 font-medium">Timetable Generated Successfully!</p>
+                        <p class="text-green-400 text-sm mt-1">Your course registration has been saved to history for future
+                            reuse. Found {{ processed_codes|length }} matching courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Generate New Button -->
         <div class="text-center mb-8" x-transition.opacity>
             <a href="{% url 'student_dashboard' %}" class="btn-secondary px-6 py-3 rounded-lg font-medium text-white inline-flex items-center">
@@ -185,7 +286,7 @@
                     </div>
 
                     <!-- Modern Cards Template -->
-                    <div x-show="selectedTemplate === 'modern'" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div x-show="selectedTemplate === 'modern'" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                         {% for event in events %}
                         <div class="glass-card p-6 rounded-lg card-hover"
                              x-show="searchTerm === '' || '{{ event.course_code|lower }}'.includes(searchTerm.toLowerCase()) || '{{ event.lecturer|lower }}'.includes(searchTerm.toLowerCase()) || '{{ event.location|lower }}'.includes(searchTerm.toLowerCase())"
@@ -230,7 +331,7 @@
                     </div>
 
                     <!-- Minimal Template -->
-                    <div x-show="selectedTemplate === 'minimal'" class="space-y-3">
+                    <div x-show="selectedTemplate === 'minimal'" class="space-y-4">
                         {% for event in events %}
                         <div class="glass-card p-4 rounded-md border-l-4 border-blue-400 hover:border-blue-300 transition-all duration-300"
                              x-show="searchTerm === '' || '{{ event.course_code|lower }}'.includes(searchTerm.toLowerCase()) || '{{ event.lecturer|lower }}'.includes(searchTerm.toLowerCase()) || '{{ event.location|lower }}'.includes(searchTerm.toLowerCase())">

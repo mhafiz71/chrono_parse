@@ -6,7 +6,7 @@ from datetime import time as dt_time, datetime
 
 import pdfplumber
 from django.core.cache import cache
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.template.loader import get_template
 from django.views import View
@@ -15,12 +15,13 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
+from django.db import transaction
 from xhtml2pdf import pisa
 from PIL import Image, ImageDraw, ImageFont
 import base64
 
 from .forms import TimetableSourceForm
-from .models import TimetableSource
+from .models import TimetableSource, TimetableEvent, CourseRegistrationHistory
 
 # Simple class to convert dictionary to object for template access
 
@@ -120,57 +121,110 @@ def normalize_course_code(code_str):
 # --- UPDATED: The JSON parser now uses the improved helpers ---
 
 
-def parse_master_timetable(source):
-    """Parses a master timetable JSON and returns a list of event dictionaries."""
-    events = []
+def parse_and_store_master_timetable(source):
+    """Parses a master timetable JSON and stores events in database."""
     try:
+        # Check if already parsed
+        if source.events_parsed and source.events.exists():
+            print(f"Source {source.id} already parsed, skipping...")
+            return True
+
         # Check if the file exists before trying to open it
         if not source.source_json or not source.source_json.path:
             print(f"Error: No JSON file associated with source {source.id}")
-            return events
+            source.status = TimetableSource.FAILED
+            source.save()
+            return False
 
         # Check if the file exists on the filesystem
         import os
         if not os.path.exists(source.source_json.path):
             print(
                 f"Error: JSON file not found at {source.source_json.path} for source {source.id}")
+            source.status = TimetableSource.FAILED
+            source.save()
+            return False
+
+        with transaction.atomic():
+            # Clear existing events for this source
+            source.events.all().delete()
+
+            with open(source.source_json.path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                events_created = 0
+
+                for item in data:
+                    start_time, end_time = parse_time_range(item.get("Time"))
+                    display_code, normalized_code, details = parse_course_string(
+                        item.get("Course", ""))
+
+                    if not all([start_time, end_time, display_code]):
+                        continue
+
+                    TimetableEvent.objects.create(
+                        source=source,
+                        day=item.get("Day", "").title(),
+                        start_time=start_time,
+                        end_time=end_time,
+                        location=item.get("Venue", ""),
+                        course_code=display_code,
+                        normalized_code=normalized_code,
+                        details=details,
+                        lecturer=item.get("Instructor(s)", ""),
+                    )
+                    events_created += 1
+
+                # Update source status
+                source.status = TimetableSource.COMPLETED
+                source.events_parsed = True
+                source.total_events = events_created
+                source.save()
+
+                print(
+                    f"Successfully parsed and stored {events_created} events for source {source.id}")
+                return True
+
+    except Exception as e:
+        print(f"Error parsing master timetable for source {source.id}: {e}")
+        source.status = TimetableSource.FAILED
+        source.save()
+        return False
+
+
+def parse_master_timetable(source):
+    """Legacy function - returns events as dictionaries for backward compatibility."""
+    events = []
+    try:
+        # Try to get from database first
+        if source.events_parsed and source.events.exists():
+            for event in source.events.all():
+                events.append({
+                    'day': event.day,
+                    'start_time': event.start_time,
+                    'end_time': event.end_time,
+                    'location': event.location,
+                    'course_code': event.course_code,
+                    'normalized_code': event.normalized_code,
+                    'details': event.details,
+                    'lecturer': event.lecturer,
+                })
             return events
 
-        with open(source.source_json.path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            for item in data:
-                start_time, end_time = parse_time_range(item.get("Time"))
-                display_code, normalized_code, details = parse_course_string(
-                    item.get("Course", ""))
+        # If not in database, parse and store
+        if parse_and_store_master_timetable(source):
+            # Recursive call to get from DB
+            return parse_master_timetable(source)
 
-                if not all([start_time, end_time, display_code]):
-                    continue
-
-                events.append({
-                    'day': item.get("Day", "").title(),
-                    'start_time': start_time,
-                    'end_time': end_time,
-                    'location': item.get("Venue", ""),
-                    # For display (e.g., "ACT 404")
-                    'course_code': display_code,
-                    # For matching (e.g., "ACT404")
-                    'normalized_code': normalized_code,
-                    'details': details,
-                    'lecturer': item.get("Instructor(s)", ""),
-                })
-    except FileNotFoundError as e:
-        print(f"Error: JSON file not found for source {source.id}: {e}")
-    except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON format in source {source.id}: {e}")
     except Exception as e:
-        print(f"Error parsing master JSON {source.id}: {e}")
+        print(f"Error retrieving events for source {source.id}: {e}")
+
     return events
 
 # get_master_schedule_data uses the cache for performance
 
 
 def get_master_schedule_data(source_id):
-    """Retrieves master schedule, using cache or parsing the JSON and caching it."""
+    """Retrieves master schedule, using cache or database storage with improved fallback."""
     cache_key = f'master_schedule_{source_id}'
     cached_data = cache.get(cache_key)
     if cached_data:
@@ -178,10 +232,38 @@ def get_master_schedule_data(source_id):
 
     try:
         source = TimetableSource.objects.get(id=source_id)
+
+        # Try to get from database first (faster than parsing JSON)
+        if source.events_parsed and source.events.exists():
+            schedule_data = []
+            for event in source.events.all():
+                schedule_data.append({
+                    'day': event.day,
+                    'start_time': event.start_time,
+                    'end_time': event.end_time,
+                    'location': event.location,
+                    'course_code': event.course_code,
+                    'normalized_code': event.normalized_code,
+                    'details': event.details,
+                    'lecturer': event.lecturer,
+                })
+
+            # Cache for 24 hours (extended from 1 hour)
+            if schedule_data:
+                cache.set(cache_key, schedule_data, 86400)
+            return schedule_data
+
+        # If not in database, parse and store
+        if parse_and_store_master_timetable(source):
+            # Recursive call to get from database
+            return get_master_schedule_data(source_id)
+
+        # Final fallback - try legacy parsing
         schedule_data = parse_master_timetable(source)
-        if schedule_data:  # Only cache if parsing was successful
-            cache.set(cache_key, schedule_data, 3600)  # Cache for 1 hour
+        if schedule_data:
+            cache.set(cache_key, schedule_data, 86400)  # Cache for 24 hours
         return schedule_data
+
     except TimetableSource.DoesNotExist:
         print(f"Error: TimetableSource with id {source_id} does not exist")
         return []
@@ -205,24 +287,115 @@ class AdminDashboardView(LoginRequiredMixin, View):
             timetable_source = form.save(commit=False)
             timetable_source.uploader = request.user
             timetable_source.save()
-            messages.success(
-                request, f"'{timetable_source.display_name}' has been uploaded successfully.")
+
+            # Parse and store events immediately after upload
+            try:
+                if parse_and_store_master_timetable(timetable_source):
+                    messages.success(
+                        request, f"'{timetable_source.display_name}' has been uploaded and processed successfully. {timetable_source.total_events} events stored.")
+                else:
+                    messages.warning(
+                        request, f"'{timetable_source.display_name}' was uploaded but failed to process. Please check the JSON format.")
+            except Exception as e:
+                messages.error(
+                    request, f"'{timetable_source.display_name}' was uploaded but processing failed: {str(e)}")
+
             return redirect('admin_dashboard')
 
         timetables = TimetableSource.objects.all().order_by('-created_at')
         return render(request, 'core/admin_dashboard.html', {'form': form, 'timetables': timetables})
 
 
+@login_required
+def delete_timetable_source(request, source_id):
+    """Delete a master timetable source and all its events."""
+    if request.method == 'POST':
+        try:
+            source = TimetableSource.objects.get(
+                id=source_id, uploader=request.user)
+            source_name = source.display_name
+
+            # Clear cache for this source
+            cache_key = f'master_schedule_{source_id}'
+            cache.delete(cache_key)
+
+            # Delete the source (this will cascade delete events)
+            source.delete()
+
+            messages.success(
+                request, f"'{source_name}' has been deleted successfully.")
+            return JsonResponse({'success': True, 'message': f"'{source_name}' deleted successfully."})
+
+        except TimetableSource.DoesNotExist:
+            messages.error(
+                request, "Timetable not found or you don't have permission to delete it.")
+            return JsonResponse({'success': False, 'message': 'Timetable not found or permission denied.'})
+        except Exception as e:
+            messages.error(request, f"Error deleting timetable: {str(e)}")
+            return JsonResponse({'success': False, 'message': f'Error: {str(e)}'})
+
+    return JsonResponse({'success': False, 'message': 'Invalid request method.'})
+
+
+def save_course_registration_history(user, source, course_codes, display_name=None, program=None, level=None):
+    """Save course registration to history for reuse."""
+    try:
+        # Create display name if not provided
+        if not display_name:
+            program_part = f"{program} " if program else ""
+            level_part = f"({level}) " if level else ""
+            display_name = f"{program_part}{level_part}- {source.display_name} - {len(course_codes)} courses"
+
+        # Check if similar history exists and update it
+        existing = CourseRegistrationHistory.objects.filter(
+            user=user,
+            source=source,
+            course_codes=json.dumps(sorted(course_codes))
+        ).first()
+
+        if existing:
+            existing.last_used = datetime.now()
+            existing.display_name = display_name
+            if program:
+                existing.program = program
+            if level:
+                existing.level = level
+            existing.save()
+            return existing
+        else:
+            # Create new history entry
+            history = CourseRegistrationHistory.objects.create(
+                user=user,
+                source=source,
+                course_codes=json.dumps(sorted(course_codes)),
+                display_name=display_name,
+                program=program,
+                level=level
+            )
+            return history
+    except Exception as e:
+        print(f"Error saving course registration history: {e}")
+        return None
+
+
 # --- FIXED: StudentDashboardView with improved course code extraction and matching ---
 class StudentDashboardView(LoginRequiredMixin, View):
     def get(self, request):
         sources = TimetableSource.objects.all().order_by('-created_at')
-        return render(request, 'core/student_dashboard.html', {'sources': sources})
+        # Get user's course registration history
+        history = CourseRegistrationHistory.objects.filter(
+            user=request.user).order_by('-last_used')[:5]
+        return render(request, 'core/student_dashboard.html', {
+            'sources': sources,
+            'history': history
+        })
 
     def post(self, request):
         sources = TimetableSource.objects.all().order_by('-created_at')
         source_id = request.POST.get('timetable_source')
         course_reg_pdf = request.FILES.get('course_reg_pdf')
+        program = request.POST.get('program', '').strip()
+        level = request.POST.get('level', '').strip()
 
         if not source_id or not course_reg_pdf:
             messages.error(
@@ -291,13 +464,89 @@ class StudentDashboardView(LoginRequiredMixin, View):
             for day in days_of_week
         }
 
+        # Save course registration history for reuse
+        try:
+            source = TimetableSource.objects.get(id=source_id)
+            save_course_registration_history(
+                user=request.user,
+                source=source,
+                course_codes=list(student_course_codes),
+                program=program or None,
+                level=level or None
+            )
+        except Exception as e:
+            print(f"Error saving history: {e}")
+
+        # Get updated history for display
+        history = CourseRegistrationHistory.objects.filter(
+            user=request.user).order_by('-last_used')[:5]
+
         return render(request, 'core/student_dashboard.html', {
             'sources': sources,
             'schedule': schedule,
             'processed_codes': list(student_course_codes),
             'raw_codes': raw_extracted_codes,  # For debugging
-            'selected_source_id': int(source_id)
+            'selected_source_id': int(source_id),
+            'history': history
         })
+
+
+@login_required
+def reuse_course_registration(request, history_id):
+    """Reuse a previous course registration to generate timetable."""
+    try:
+        history = CourseRegistrationHistory.objects.get(
+            id=history_id, user=request.user)
+        course_codes = json.loads(history.course_codes)
+
+        # Update last_used timestamp
+        history.last_used = datetime.now()
+        history.save()
+
+        # Get master schedule data
+        master_schedule = get_master_schedule_data(history.source.id)
+
+        if not master_schedule:
+            messages.error(
+                request, 'The timetable source is no longer available.')
+            return redirect('student_dashboard')
+
+        # Filter matching events
+        student_events = []
+        for event in master_schedule:
+            event_code = event.get('normalized_code')
+            if event_code in course_codes:
+                student_events.append(event)
+
+        days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        schedule = {
+            day: sorted([e for e in student_events if e['day']
+                        == day], key=lambda x: x['start_time'])
+            for day in days_of_week
+        }
+
+        sources = TimetableSource.objects.all().order_by('-created_at')
+        history_list = CourseRegistrationHistory.objects.filter(
+            user=request.user).order_by('-last_used')[:5]
+
+        messages.success(
+            request, f"Reused registration: {history.display_name}")
+
+        return render(request, 'core/student_dashboard.html', {
+            'sources': sources,
+            'schedule': schedule,
+            'processed_codes': course_codes,
+            'selected_source_id': history.source.id,
+            'history': history_list
+        })
+
+    except CourseRegistrationHistory.DoesNotExist:
+        messages.error(request, 'Course registration history not found.')
+        return redirect('student_dashboard')
+    except Exception as e:
+        messages.error(request, f'Error reusing registration: {str(e)}')
+        return redirect('student_dashboard')
+
 
 # --- UPDATED: download_timetable_pdf with consistent normalization ---
 
