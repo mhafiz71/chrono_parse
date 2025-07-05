@@ -391,12 +391,12 @@ def download_timetable_jpg(request):
     draw = ImageDraw.Draw(img)
 
     try:
-        # Try to use a better font with different sizes for hierarchy
-        title_font = ImageFont.truetype("arial.ttf", 28)
-        subtitle_font = ImageFont.truetype("arial.ttf", 16)
-        header_font = ImageFont.truetype("arial.ttf", 14)
-        text_font = ImageFont.truetype("arial.ttf", 11)
-        small_font = ImageFont.truetype("arial.ttf", 9)
+        # Try to use a better font with larger sizes for better readability
+        title_font = ImageFont.truetype("arial.ttf", 32)
+        subtitle_font = ImageFont.truetype("arial.ttf", 18)
+        header_font = ImageFont.truetype("arial.ttf", 16)
+        text_font = ImageFont.truetype("arial.ttf", 14)  # Increased from 11
+        small_font = ImageFont.truetype("arial.ttf", 12)  # Increased from 9
     except:
         # Fallback to default font
         title_font = ImageFont.load_default()
@@ -426,18 +426,16 @@ def download_timetable_jpg(request):
     draw.text(((img_width - subtitle_width) // 2, 50),
               subtitle, fill='#666', font=subtitle_font)
 
-    # Draw table with minimal-inspired styling
+    # Draw table with day-based row layout (like grid template)
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    times = ["8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM",
-             "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]
 
-    cell_width = 130
-    cell_height = 140
+    cell_height = 140  # Further increased height for larger event cards
     start_x, start_y = 30, header_height + 20
-    day_col_width = 100
+    day_col_width = 120
+    events_col_width = img_width - day_col_width - 60  # Rest of width for events
 
     # Draw main table border
-    table_width = day_col_width + len(times) * cell_width
+    table_width = day_col_width + events_col_width
     table_height = len(days) * cell_height + 40
     draw.rectangle([start_x, start_y, start_x + table_width, start_y + table_height],
                    outline='#ddd', fill='white')
@@ -445,20 +443,18 @@ def download_timetable_jpg(request):
     # Draw "Day" header
     draw.rectangle([start_x, start_y, start_x + day_col_width, start_y + 40],
                    outline='#ddd', fill='#e9ecef')
-    draw.text((start_x + 25, start_y + 12), "Day",
+    draw.text((start_x + 35, start_y + 12), "Day",
               fill='#333', font=header_font)
 
-    # Draw time headers with minimal styling
-    for i, time_slot in enumerate(times):
-        x = start_x + day_col_width + i * cell_width
-        draw.rectangle([x, start_y, x + cell_width, start_y + 40],
-                       outline='#ddd', fill='#f8f9fa')
-
-        # Center the time text
-        time_bbox = draw.textbbox((0, 0), time_slot, font=small_font)
-        time_width = time_bbox[2] - time_bbox[0]
-        draw.text((x + (cell_width - time_width) // 2, start_y + 15),
-                  time_slot, fill='#333', font=small_font)
+    # Draw "Classes" header
+    events_x = start_x + day_col_width
+    draw.rectangle([events_x, start_y, events_x + events_col_width, start_y + 40],
+                   outline='#ddd', fill='#e9ecef')
+    classes_text = "Classes"
+    classes_bbox = draw.textbbox((0, 0), classes_text, font=header_font)
+    classes_width = classes_bbox[2] - classes_bbox[0]
+    draw.text((events_x + (events_col_width - classes_width) // 2, start_y + 12),
+              classes_text, fill='#333', font=header_font)
 
     # Draw day rows and events with minimal-inspired styling
     days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
@@ -477,7 +473,7 @@ def download_timetable_jpg(request):
     for day_idx, day in enumerate(days):
         y = start_y + 40 + day_idx * cell_height
 
-        # Draw day header with minimal styling
+        # Draw day header
         draw.rectangle([start_x, y, start_x + day_col_width, y + cell_height],
                        outline='#ddd', fill='#f8f9fa')
 
@@ -487,75 +483,68 @@ def download_timetable_jpg(request):
         draw.text((start_x + 15, y + (cell_height - day_height) // 2),
                   day.upper(), fill='#333', font=header_font)
 
-        # Draw time slots for this day
+        # Draw events cell background
+        events_x = start_x + day_col_width
+        draw.rectangle([events_x, y, events_x + events_col_width, y + cell_height],
+                       outline='#ddd', fill='#fafafa')
+
+        # Draw event cards horizontally for this day
         day_events = schedule.get(day, [])
-        for time_idx in range(len(times)):
-            x = start_x + day_col_width + time_idx * cell_width
+        if day_events:
+            card_width = 200   # Increased width for larger text
+            card_height = 110  # Increased height for larger text
+            card_spacing = 12  # Increased spacing between cards
+            cards_per_row = events_col_width // (card_width + card_spacing)
 
-            # Draw cell background
-            draw.rectangle([x, y, x + cell_width, y + cell_height],
-                           outline='#ddd', fill='#fafafa')
+            for event_idx, event in enumerate(day_events):
+                # Calculate position for this event card
+                row = event_idx // cards_per_row
+                col = event_idx % cards_per_row
 
-            # Find events for this time slot (more flexible matching)
-            hour = time_idx + 8
-            events_in_slot = []
+                card_x = events_x + 10 + col * (card_width + card_spacing)
+                card_y = y + 10 + row * (card_height + 5)
 
-            for event in day_events:
-                # Check if event starts within this hour or overlaps with it
-                if (event.start_time.hour == hour or
-                    (event.start_time.hour < hour and event.end_time.hour > hour) or
-                        (event.start_time.hour < hour and event.end_time.hour == hour)):
-                    events_in_slot.append(event)
+                # Skip if card would go outside the cell
+                if card_y + card_height > y + cell_height - 10:
+                    break
 
-            if events_in_slot:
-                # Draw the first event in this time slot
-                event = events_in_slot[0]
+                # Event card background with blue styling
+                draw.rectangle([card_x, card_y, card_x + card_width, card_y + card_height],
+                               outline='#2563eb', fill='#dbeafe', width=2)
 
-                # Draw event card with minimal styling
-                card_margin = 8
-                draw.rectangle([x + card_margin, y + card_margin,
-                               x + cell_width - card_margin, y + cell_height - card_margin],
-                               outline='#ddd', fill='#f8f9fa')
+                # Course code (prominent and bold)
+                course_text = event.course_code
+                if len(course_text) > 12:  # Adjusted for larger font
+                    course_text = course_text[:12] + "..."
+                draw.text((card_x + 12, card_y + 10),
+                          course_text, fill='#1e293b', font=text_font)
 
-                # Add subtle shadow effect
-                draw.rectangle([x + card_margin + 2, y + card_margin + 2,
-                               x + cell_width - card_margin + 2, y + cell_height - card_margin + 2],
-                               outline='#e0e0e0', fill='#e0e0e0')
-                draw.rectangle([x + card_margin, y + card_margin,
-                               x + cell_width - card_margin, y + cell_height - card_margin],
-                               outline='#ddd', fill='#f8f9fa')
+                # Time (larger and clearer)
+                time_text = f"{event.start_time.hour}:{event.start_time.minute:02d} - {event.end_time.hour}:{event.end_time.minute:02d}"
+                draw.text((card_x + 12, card_y + 35),
+                          time_text, fill='#334155', font=small_font)
 
-                # Draw event content with proper spacing
-                text_x = x + card_margin + 8
+                # Location (truncated, larger text)
+                location_text = event.location[:18] + \
+                    "..." if len(event.location) > 18 else event.location
+                draw.text((card_x + 12, card_y + 60),
+                          f"📍 {location_text}", fill='#475569', font=small_font)
 
-                # Course code (bold)
-                draw.text((text_x, y + card_margin + 8), event.course_code,
-                          fill='#333', font=text_font)
-
-                # Time
-                time_text = f"{event.start_time.hour}:{event.start_time.minute:02d}-{event.end_time.hour}:{event.end_time.minute:02d}"
-                draw.text((text_x, y + card_margin + 28), time_text,
-                          fill='#666', font=small_font)
-
-                # Location with icon-like prefix
-                location_text = event.location[:18] if len(
-                    event.location) > 18 else event.location
-                draw.text((text_x, y + card_margin + 45), f"📍 {location_text}",
-                          fill='#777', font=small_font)
-
-                # Lecturer with icon-like prefix
-                lecturer_text = event.lecturer[:18] if len(
-                    event.lecturer) > 18 else event.lecturer
+                # Lecturer (truncated, larger text)
+                lecturer_text = event.lecturer[:16] + \
+                    "..." if len(event.lecturer) > 16 else event.lecturer
                 if lecturer_text:
-                    draw.text((text_x, y + card_margin + 62), f"👨‍🏫 {lecturer_text}",
-                              fill='#777', font=small_font)
-            else:
-                # No events in this time slot - show empty state
-                empty_text = "Free"
-                empty_bbox = draw.textbbox((0, 0), empty_text, font=small_font)
-                empty_width = empty_bbox[2] - empty_bbox[0]
-                draw.text((x + (cell_width - empty_width) // 2, y + cell_height // 2),
-                          empty_text, fill='#ccc', font=small_font)
+                    draw.text((card_x + 12, card_y + 85),
+                              f"👨‍🏫 {lecturer_text}", fill='#475569', font=small_font)
+        else:
+            # Empty state - no classes for this day
+            no_classes_text = "No classes scheduled"
+            no_classes_bbox = draw.textbbox(
+                (0, 0), no_classes_text, font=text_font)
+            no_classes_width = no_classes_bbox[2] - no_classes_bbox[0]
+            draw.text((events_x + (events_col_width - no_classes_width) // 2,
+                       y + cell_height // 2 - 10),
+                      no_classes_text, fill='#9ca3af', font=text_font)
 
     # Draw footer with minimal styling
     footer_y = start_y + table_height + 20
