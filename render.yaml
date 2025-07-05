@@ -2,16 +2,15 @@ services:
   # PostgreSQL Database
   - type: pserv
     name: chronopars-db
-    env: python
+    databaseName: chronoparsdb
+    databaseUser: root
     plan: free
-    region: oregon
     
   # Web Service
   - type: web
     name: chrono_parse
     env: python
     plan: free
-    region: oregon
     buildCommand: |
       pip install -r requirements.txt &&
       python manage.py migrate &&
@@ -25,5 +24,3 @@ services:
           property: connectionString
       - key: DJANGO_SETTINGS_MODULE
         value: chronopars.settings
-      - key: PYTHON_VERSION
-        value: 3.11.0
