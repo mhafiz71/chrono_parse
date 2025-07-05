@@ -7,7 +7,7 @@
     <style>
         @page {
             size: A4 landscape;
-            margin: 0.5in;
+            margin: 0.3in;
         }
 
         * {
@@ -19,55 +19,61 @@
         body {
             font-family: Arial, sans-serif;
             font-size: 8pt;
-            line-height: 1.3;
-            color: #333;
-            background: white;
+            line-height: 1.4;
+            color: #1a1a1a;
+            background: #667eea;
+            padding: 20px;
         }
 
         .container {
             width: 100%;
             max-width: 100%;
             background: white;
-            padding: 15px;
+            border-radius: 12px;
+            overflow: hidden;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #4a90e2;
-            padding-bottom: 10px;
+            padding: 30px 20px 25px;
+            background: #f8fafc;
         }
 
         .title {
-            font-size: 18pt;
+            font-size: 28pt;
             font-weight: 700;
-            color: #4a90e2;
-            margin-bottom: 5px;
+            color: #667eea;
+            margin-bottom: 8px;
         }
 
         .subtitle {
-            font-size: 10pt;
-            color: #666;
-            margin-bottom: 3px;
+            font-size: 12pt;
+            color: #64748b;
+            margin-bottom: 5px;
+            font-weight: 500;
         }
 
         .generated-by {
-            font-size: 8pt;
-            color: #888;
+            font-size: 9pt;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .table-container {
+            padding: 10px;
+            overflow-x: auto;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 15px;
-            table-layout: fixed;
-            border: 2px solid #4a90e2;
+            background: white;
         }
 
         th {
-            background: #4a90e2;
+            background: #667eea;
             color: white;
-            padding: 8px 6px;
+            padding: 15px 10px;
             text-align: center;
             font-weight: 600;
             font-size: 9pt;
@@ -76,93 +82,119 @@
 
         .day-header {
             width: 12%;
-            background: #4a90e2;
-            font-weight: 600;
+            font-size: 11pt;
+            font-weight: 700;
         }
 
-        .time-header {
-            width: 8.8%;
-            background: #4a90e2;
-            font-size: 8pt;
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
+        .events-header {
+            width: 88%;
+            font-size: 11pt;
+            font-weight: 700;
         }
 
         td {
-            border: 1px solid #ddd;
+            border: 1px solid #e2e8f0;
             vertical-align: top;
-            padding: 4px 3px;
+            padding: 0;
+            position: relative;
         }
 
         .day-cell {
-            background: #4a90e2;
+            background: #1e293b;
             color: white;
             font-weight: 600;
             text-align: center;
-            padding: 10px 6px;
-            font-size: 9pt;
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
+            padding: 20px 10px;
+            font-size: 11pt;
+            min-height: 80px;
+            width: 12%;
         }
 
-        .time-slot {
-            min-width: 120px;
-            vertical-align: top;
+        .events-cell {
+            padding: 5px;
+            background: #f8fafc;
             min-height: 60px;
-            text-align: center;
-            padding: 4px 3px;
-            background: #f9f9f9;
+            width: 88%;
         }
+
+        .events-row-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 12px 0;
+            table-layout: auto;
+        }
+
+        .events-row-table tr {
+            border: none;
+            text-align: center;
+        }
+
+        .events-row-table td {
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
 
         .event-block {
-            background: #4a90e2;
+            background: #4299e1;
             color: white;
-            padding: 8px 6px;
-            margin: 3px;
-            border-radius: 4px;
+            padding: 10px 12px;
+            margin: 0 auto;
+            border-radius: 6px;
+            font-size: 8pt;
+            line-height: 1.3;
+            border-left: 4px solid #2b6cb0;
+            min-height: 65px;
+            width: 160px;
             text-align: left;
-            border: 1px solid #357abd;
+            display: block;
         }
 
         .course-code {
             font-weight: 700;
             font-size: 10pt;
-            margin-bottom: 3px;
-            color: white;
+            margin-bottom: 4px;
+            color: #ffffff;
             display: block;
         }
 
         .time {
             font-size: 8pt;
-            color: #e6f3ff;
-            margin-bottom: 2px;
+            color: #ffffff;
+            margin-bottom: 3px;
             display: block;
         }
 
         .details {
-            font-size: 8pt;
-            color: #cce7ff;
-            margin-bottom: 1px;
+            font-size: 7pt;
+            color: #ffffff;
+            margin-bottom: 2px;
             display: block;
+        }
+
+        .details:last-child {
+            margin-bottom: 0;
         }
 
         .no-classes {
             text-align: center;
-            color: #999;
+            color: #94a3b8;
             font-style: italic;
-            padding: 20px;
-            font-size: 8pt;
+            padding: 30px;
+            font-size: 9pt;
         }
 
         .footer {
             text-align: center;
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 3px solid #4a90e2;
-            font-size: 8pt;
-            color: #666;
+            padding: 25px 20px;
+            background: #f8fafc;
+            font-size: 9pt;
+            color: #64748b;
+            font-weight: 500;
         }
-
     </style>
 </head>
 <body>
@@ -173,197 +205,43 @@
             <div class="generated-by">Generated by ChronoParse AI</div>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th class="day-header">Day</th>
-                    <th class="time-header">8:00 AM</th>
-                    <th class="time-header">9:00 AM</th>
-                    <th class="time-header">10:00 AM</th>
-                    <th class="time-header">11:00 AM</th>
-                    <th class="time-header">12:00 PM</th>
-                    <th class="time-header">1:00 PM</th>
-                    <th class="time-header">2:00 PM</th>
-                    <th class="time-header">3:00 PM</th>
-                    <th class="time-header">4:00 PM</th>
-                    <th class="time-header">5:00 PM</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for day, events in schedule.items %}
-                <tr>
-                    <td class="day-cell">{{ day|upper }}</td>
-                    <!-- 8:00 AM -->
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time.hour == 8 %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="details">📍 {{ event.location }}</div>
-                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="day-header">Day</th>
+                        <th class="events-header">Classes</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {% for day, events in schedule.items %}
+                            <tr>
+                                <td class="day-cell">{{ day|upper }}</td>
+                                <td class="events-cell">
+                                    {% if events %}
+                                    <table class="events-row-table">
+                                        <tr>
+                                            {% for event in events %}
+                                            <td class="event-block">
+                                                <div class="course-code">{{ event.course_code }}</div>
+                                            <div class="time">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
+                                            <div class="details">📍 {{ event.location }}</div>
+                                            <div class="details">👨‍🏫 {{ event.lecturer }}</div>
+                                            </td>
+                                            {% endfor %}
+                                            </tr>
+                                    </table>
+                                    {% else %}
+                                    <div class="no-classes">No classes scheduled</div>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        </table>
                         </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 9:00 AM -->
-                <tr>
-                    <td class="time-header">9:00 AM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "9" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 10:00 AM -->
-                <tr>
-                    <td class="time-header">10:00 AM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "10" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 11:00 AM -->
-                <tr>
-                    <td class="time-header">11:00 AM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "11" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 12:00 PM -->
-                <tr>
-                    <td class="time-header">12:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "12" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 1:00 PM -->
-                <tr>
-                    <td class="time-header">1:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "13" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 2:00 PM -->
-                <tr>
-                    <td class="time-header">2:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "14" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 3:00 PM -->
-                <tr>
-                    <td class="time-header">3:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "15" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 4:00 PM -->
-                <tr>
-                    <td class="time-header">4:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "16" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-                <!-- 5:00 PM -->
-                <tr>
-                    <td class="time-header">5:00 PM</td>
-                    {% for day, events in schedule.items %}
-                    <td class="time-slot">
-                        {% for event in events %}
-                        {% if event.start_time|time:"G" == "17" %}
-                        <div class="event-block">
-                            <div class="course-code">{{ event.course_code }}</div>
-                            <div class="event-details">{{ event.start_time|time:"g:i A" }}-{{ event.end_time|time:"g:i A" }}</div>
-                            <div class="event-details">{{ event.location }}</div>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                    </td>
-                    {% endfor %}
-                </tr>
-            </tbody>
-        </table>
 
+        
         <div class="footer">
             Powered by ChronoParse - Your AI Timetable Assistant
         </div>

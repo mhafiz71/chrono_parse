@@ -1,0 +1,5063 @@
+[
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "MTH 472 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Oladejo, N K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 12:10p",
+    "Course": "CHM 546 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Olutayo, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ESD 308 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ENV 446 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ENV 322 Lec 1a",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 6:50p",
+    "Course": "DLT 112 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Shaban, S H"
+  },
+  {
+    "Day": "Monday",
+    "Time": "8:05a - 9:05a",
+    "Course": "DLT 202 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Quansah, D K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DME 106 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "EPB 314 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Nonterah, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "RMID 309 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENV 224 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ENV 214 Lec 1a",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Joan, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 12:15p",
+    "Course": "ENV 424 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CDS 104 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BCH 804 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Donkor, M, Abugri, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ETS 204 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Amadu, C C"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENV 324 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Adonadaga, M G"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ENV 404 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Attaribo, T"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MTH 372 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Osei, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "MTH 342 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Seidu, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 3:35p",
+    "Course": "MTH 308 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ETS 202 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ESD 310 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "FSC 310 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Seidu, R A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "NURS 119 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Kamptiib, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PFR 316 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Mubaric, Y"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "RMID 313 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Osman, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 102 Lec 2",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Akaribo, W"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "NURS 116 Lec 2",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Abem, K A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "NURS 114 Lec 2",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Abem, K A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CDS 404 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gati, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "8:05a - 10:05a",
+    "Course": "CDS 302 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Daabo, M I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 4:30p",
+    "Course": "CSC 614 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Daabo, MI"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CDS 308 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "FRN 102 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Lambon, A K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "MAE 202 Lec 2",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Sie, C K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 11:15a",
+    "Course": "STS 474 Lec 2",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Wiredu, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "12:25p - 2:25p",
+    "Course": "FRN 202 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Lambon, A K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "PHE 216 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 7:45p",
+    "Course": "CHE 362 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Fatao, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "BCH 262 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Nutakor, C"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 1:15p",
+    "Course": "CHM 162 Lab 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Mosobil, R, Quansah, D K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BCH 322 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Agongo, G"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BCH 304 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Nutakor, C"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 202 Lec 1a",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Sarpong, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIO 302 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Azameti, M K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIO 224 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Atujona, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PMP 304 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PHY 414 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHY 306 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Owusu, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHY 310 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Owusu, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHY 104 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PMP 344 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PFR 306 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Krakani, P"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "ENV 608 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Oyelude, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 12:15p",
+    "Course": "EPB 304 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Moro, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 7:45p",
+    "Course": "ENV 642 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "RMID 311 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Mohammed, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "GEN 102 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Yaro, D S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "RMID 301 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Briamah, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PFR 106 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Sakeah, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PFR 312 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Salifu, R"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 8:00a",
+    "Course": "DMG 202 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Luu, Y"
+  },
+  {
+    "Day": "Monday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MTH 324 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Bonye, F"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 12:15p",
+    "Course": "ACT 302 Lec 1a",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Osei-Mainoo, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "12:25p - 1:25p",
+    "Course": "STS 362 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Anuwoje, I A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ACT 404 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 3:35p",
+    "Course": "STS 442 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Akamba, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 4:40p",
+    "Course": "MTH 206 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 5:45p",
+    "Course": "STS 206 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Akamba, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 6:50p",
+    "Course": "STS 106 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Engmann, G M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MTH 104 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Agana, F"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CSC 202 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "STS 452 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Nasiru, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MTH 484 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Seidu, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CSC 306 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Aburinya, B B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 4:40p",
+    "Course": "MTH 332 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Boah, D K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CSC 314 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MTH 484 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Seidu, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "CSC 314 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 11:15a",
+    "Course": "CSC 322 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Daabo, MI"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PFR 102 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Anaba, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MTH 212 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BCH 306 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Agongo, G"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "FCE 206 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Abukari, M A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 12:20p",
+    "Course": "ICS 212 Lec 2",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "12:25p - 1:25p",
+    "Course": "DIT 112 Lec 2",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Strato, B A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CHM 344 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Oyelude, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHT 144 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Shaban, S H"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 113 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Kukeba, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ITC 302 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Bazuku, R"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "DCS 208 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Kuupole, E E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BCH 424 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Dassah, S D, Abugri, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "DCI 102 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Bakawari, B E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 6:50p",
+    "Course": "DIT 104 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Olufemi, O O"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "BCH 702 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Adu-Frimpong, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DIT 206 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "DCS 106 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "DCI 106 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CAC 402 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Mensah, V"
+  },
+  {
+    "Day": "Monday",
+    "Time": "8:05a - 9:05a",
+    "Course": "BIE 306 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ICS 406 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Wumnaya, P A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 12:15p",
+    "Course": "ICS 406 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Wumnaya, P A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 3:30p",
+    "Course": "SOE 208 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 4:40p",
+    "Course": "MAE 102 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CAC 206 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Ahia, B N"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MTH 372 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Osei, B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 8:00a",
+    "Course": "ETS 304 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "8:05a - 9:05a",
+    "Course": "DCI 108 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ICS 412 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Ahene, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 3:35p",
+    "Course": "SOE 404 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "BIE 202 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "DME 102 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "CHM 570 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Mbatchou, V C"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 12:15p",
+    "Course": "ACT 206 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "12:25p - 2:25p",
+    "Course": "FCE 404 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Sie, C K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "PHT 312 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "ACT 306 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHT 306 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Ziemah, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ETS 406 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ETS 304 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "DCI 202 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "PHT 306 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Ziemah, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "MAE 406 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Churcher, K Α"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "MAE 402 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Adams, F X"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHE 212 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "PHE 216 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "CHM 432 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Olutayo, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "EPB 602 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Awine, T"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "BIE 208 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CHE 406 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Abukari, M A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 11:10a",
+    "Course": "BIO 432 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Adetunde, L A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DME 206 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "BIO 336 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Awo, O"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 3:35p",
+    "Course": "BIO 418 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Essel, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIO 232 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Motey, G A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 6:50p",
+    "Course": "MAE 306 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Hamidu, B I"
+  },
+  {
+    "Day": "Monday",
+    "Time": "6:55p - 7:55p",
+    "Course": "BIO 308 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Adu-Frimpong, M"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "MTH 626 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Twum, S B"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "MTH 428 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Abe-I-Kpeng, G"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "MTH 478 Lec 2",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Bonye, F"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 7:45p",
+    "Course": "MTH 624 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Adjabui, M J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 10:00a",
+    "Course": "STS 610 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 1:15p",
+    "Course": "STS 664 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Nasiru, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 4:30p",
+    "Course": "STS 608 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Zamanah, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "MTH 324 Lec 2",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Bonye, F"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHY 212 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "9:10a - 10:10a",
+    "Course": "PHY 202 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Monday",
+    "Time": "10:15a - 11:15a",
+    "Course": "PIP 254 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, M N"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DPH 102 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Mensah, P K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "PMP 348 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "PIP 254 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, M N"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ETS 310 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Monday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHY 204 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Mensah, P K"
+  },
+  {
+    "Day": "Monday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ESD 306 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Monday",
+    "Time": "11:20a - 1:20p",
+    "Course": "BCH 408 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Anyigba, C A"
+  },
+  {
+    "Day": "Monday",
+    "Time": "1:30p - 2:30p",
+    "Course": "DBC 102 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Monday",
+    "Time": "2:35p - 4:35p",
+    "Course": "CAC 402 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Mensah, V"
+  },
+  {
+    "Day": "Monday",
+    "Time": "4:45p - 6:45p",
+    "Course": "PHT 222 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Pedavaoh, MM, Mohammed, M S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENV 402 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "CHM 212 Lec 1a",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Armah, E K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "CHE 206 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Fatao, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "ENV 308 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 4:40p",
+    "Course": "ENV 324 Lec 1a",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Adonadaga, MG"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ENV 424 Lec 1a",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ENV 212 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 108 Lec 2",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Kwose, W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "RMID 305 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Osman, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PFR 314 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Salifu, R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "MAE 204 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "FCE/FDE 104 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Alagbel, AA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ANUR 216 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Achaliwie, F"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENV 326 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "CDS 108 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 2:20p",
+    "Course": "ENV 602 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Adonadaga, M G"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 5:35p",
+    "Course": "ENV 604 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHT 142 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Abagale, A S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "MTH 342 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Seidu, B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ENV 204 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Amadu, C C"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 12:20p",
+    "Course": "ENV 242 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "ACT 402 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Osei-Mainoo, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ENV 224 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ESD 110 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ESD 304 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ESD 104 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Owusu, G"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 103 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Doat, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ANUR 204 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ETS 308 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ETS 310 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "RMID 311 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CHM 304 Lec 1a",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Mbatchou, V C"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "NURS 101 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Yomboi, J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "RMID 397 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Yakubu, H, Amomba, SA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "BCH 452 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Donkor, M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "BCH 206 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Anyigba, C A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CDS 406 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Aburinya, B B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 12:10p",
+    "Course": "CSC 608 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CDS 106 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "CDS 304 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CDS 310 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gati, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "FCE 302 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Obeng, M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "BIE 102 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "CHM 452 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Donkor, M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "GEN 106 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Ziekah, M P"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "FRN 402 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Lambon, A K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BCH 404 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Sunwiale, S S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "DLT 104 Lec 2",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Quansah, D K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 1:15p",
+    "Course": "CHM 262 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Olutayo, A, Mosobil, R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CHM 324 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 102 Lec 1a",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Captain-Esoah, M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 12:15p",
+    "Course": "BIO 332 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Kuugbee, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIO 324 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Kombat, E O"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIO 434 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Motey, G A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHY 206 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PMP 402 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHY 408 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHY 324 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Adazabra, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 6:40p",
+    "Course": "PHY 602 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Adazabra, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "RMID 307 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Yakubu, H, Amomba, SA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "NURS 110 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Nigarim, D S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "NURS 109 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Kuugbee, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "NURS 106 Lec 2",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Kwose, W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 102 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Akaribo, W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DCS 206 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "EPB 304 Lec 2",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Moro, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 1:15p",
+    "Course": "CHM 582 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Bayor, J, Pelig-Ba, K B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "EPB 316 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 4:40p",
+    "Course": "PHY 102 Lec 2",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Owusu, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "PHT 342 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Ziemah, J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ANUR 206 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "EPB 206 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Atire, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PFR 202 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Anaba, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "EPB 106 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Kampo, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "EPB 204 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Welaga, P"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "DMT 102 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MTH 474 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "MTH 464 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Boah, D K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 12:20p",
+    "Course": "MTH 486 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Bonye, F"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "MTH 302 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Oladejo, N K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "MTH 214 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Adjabui, M J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "MTH 312 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Etwire, C J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "STS 202 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ACT 202 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Osei-Mainoo, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MTH 214 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Adjabui, M J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 12:15p",
+    "Course": "CSC 364 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Agbedemnab, PA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CSC 416 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "STS 106 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Engmann, G M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "MTH 312 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Etwire, C J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CSC 416 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "CSC 202 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "EPB 104 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Beeri, P"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "STS 384 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Angbing, I D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CSC 322 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Daabo, M I"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "PFR 104 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Beeri, P, Sakeah, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "STS 384 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Angbing, I D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "MAE 104 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Atepor, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "FCE/FDE 204 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Sanaari, JA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ICS 102 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Wumnaya, P A, Anang, R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "ICS 412 Lec 2",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Ahene, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "DCI 212 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Adom, K D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "CAC 102 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Ahia, B N"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ITC 402 Lec 1a",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Laar, D S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ICS 202 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Adom, K D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DCS 208 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Kuupole, E E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "SOE 406 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "DCI 108 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ETS 102 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ITC 202 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Bazuku, R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "DCS 102 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 1:15p",
+    "Course": "CHM 588 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Ohene, B A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIE 302 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "DIT 202 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Olufemi, O O"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "DIT 202 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Olufemi, O O"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CAC 302 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Anafo, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "SCE 312 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Tindane, T N"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 12:20p",
+    "Course": "BIE 102 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ENV 422 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Atindana, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ICS 308 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Wumnaya, P A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "ICS 206 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Bakawari, B E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "SOE 208 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "ICS 402 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Bakawari, BE"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PHT 212 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Pedavaoh, M M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ICS 212 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "SCE 204 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CAC 202 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Luu, Y"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "SOE 402 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BCH 614 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PHT 132 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 2:20p",
+    "Course": "BCH 604 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Abugri, J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ACT 304 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "DME 202 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Sie, C K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MTH 442 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Nantomah, K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PHE 202 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "CHE 204 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Dorsah, P"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "DLT 210 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Atindana, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MAE 404 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Bornaa, C S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CHM 402 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Mbatchou, V C"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHE 214 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Anankabiik, J A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CHM 264 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Ohene, B A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "PHE 204 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Anankabiik, JA"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "BIE 406 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MAE 406 Lec 1a",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Churcher, K Α"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "EPB 604 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Kukeba, M, Achaliwie, F"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "FSC 306 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Seidu, R A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CHM 332 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Quansah, D K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "SCE 322 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIE 402 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 322 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Kombat, E O, Appiah-Kubi, K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "BIO 416 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Azameti, M K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 12:15p",
+    "Course": "BIO 214 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Awo, O"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "BIO 424 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Asoala, V"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "BIO 432 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Adetunde, L A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ETS 414 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Mohammed, A R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "BIE 202 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ETS 412 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Abanyie, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "MTH 646 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Twum, S B"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 12:15p",
+    "Course": "MTH 314 Lec 2",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Alhassan, E A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 5:35p",
+    "Course": "MTH 628 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Abe-I-Kpeng, G"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "STS 634 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Engmann, G M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 1:15p",
+    "Course": "STS 666 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Nasiru, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 4:30p",
+    "Course": "STS 650 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Zamanah, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 7:45p",
+    "Course": "STS 618 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Anuwoje, I A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PMP 444 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, M N"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "ETS 414 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Mohammed, A R"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PMP 302 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHY 302 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "PHY 424 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "PMP 402 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "3:40p - 4:40p",
+    "Course": "PHY 408 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "PHY 416 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "PHY 306 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Owusu, S"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "DPH 102 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Mensah, P K"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CAC 404 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Luu, Y"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "BCH 206 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Anyigba, C A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "10:15a - 12:15p",
+    "Course": "DBC 102 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CAC 106 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "CAC 408 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Anafo, A"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "DLT 204 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Pedavaoh, M M"
+  },
+  {
+    "Day": "Tuesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PFR 604 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Debpuur, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "FCE 402 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Alagbel, A A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ENV 308 Lec 1a",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "MTH 304 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ESD 114 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "MTH 302 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Oladejo, N K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 10:05a",
+    "Course": "PFR 310 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Krakani, P"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "FCE/FDE 102 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Ayeriga, MW"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "RMID 397 Lec 2",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "MAE/DME 206 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CHM 202 Lec 2",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Mbatchou, VC"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 10:05a",
+    "Course": "ETS 404 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CDS 408 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ESD 304 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ENV 446 Lec 1a",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Abanyie, S K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ESD 312 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Joan, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ACT 202 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Osei-Mainoo, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ACT 304 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ENV 342 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "MTH 308 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ACT 206 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ENV 432 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Owusu, G"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BCH 324 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Nutakor, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BCH 302 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Anyigba, C A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PFR 602 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Sakeah, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 105 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Doat, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 110 Lec 2",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Nigarim, D S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ETS 208 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "NURS 116 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Abem, K A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "BCH 204 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Seidu, R A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CDS 408 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "CDS 310 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gati, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "CDS 302 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Daabo, MI"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CDS 306 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "CDS 104 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 4:40p",
+    "Course": "CDS 426 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "CDS 204 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CDS 406 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Aburinya, B B"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 3:25p",
+    "Course": "CSC 612 Lec 1",
+    "Venue": "Comp. LAB Laboratory (80, 3.10)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PHE 102 Lec 2",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Anankabiik, JA"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 10:05a",
+    "Course": "MAE 106 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHT 304 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Abugri, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "MAE 208 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "STS 474 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Wiredu, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "CHM 362 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Armah, E K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "BCH 406 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BCH 606 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Welaga, P"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHT 224 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Shaban, S H"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 314 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Attaribo, T"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIO 308 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Adu-Frimpong, M"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIO 206 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Adetunde, L A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "PHY 192 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "PHY 416 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 5:35p",
+    "Course": "PHY 292 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHY 232 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "EPB 302 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Achana, F"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "RMID 301 Lec 2",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PFR 204 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Achana, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "BIE 408 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PFR 606 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Doat, A, Akazili, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "MTH 102 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Alhassan, E A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHY 102 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Owusu, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PFR 318 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Anaba, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DMG 202 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Luu, Y"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "MTH 352 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ANUR 210 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Kukeba, M"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "MTH 452 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Etwire, C J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "MTH 306 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Osei, B"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ACT 306 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CSC 102 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Bakawari, BE, Azaare, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "CSC 206 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Gati, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "MTH 202 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Alhassan, E A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "CSC 424 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CSC 418 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 114 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Abem, K A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PFR 108 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Akazili, J, Chatio, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "MKT 204 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CSC 208 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DLT 202 Lec 2",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Quansah, DK"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BCH 202 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Sunwiale, S S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CHM 342 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Bayor, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "DIT 104 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Olufemi, O O"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "ITC 310 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Strato, B A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "SOE 402 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ITC 404 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "DCS 212 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "DIT 206 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "ICS 104 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENT 102 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Agongo, G"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "DIT 204 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Strato, B A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 4:40p",
+    "Course": "SOE 312 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Wumnaya, P. A, Akobilla, i"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "SOE 322 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "MAE 202 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Sie, C K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "SCE 202 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DCI 104 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Adom, K D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ICS 302 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "ICS 102 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Anang, R"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHT 232 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Mohammed, M S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHT 206 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Armah, E K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "ENV 612 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ACT 404 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "ICS 302 Lec 2",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CAC 306 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Mensah, V"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CHM 102 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ENV 212 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CHE 332 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Dorsah, P"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "CHE 402 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Dorsah, P"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 5:35p",
+    "Course": "CHM 584 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Oyelude, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "CHE 404 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DLT 204 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Pedavaoh, M M"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "SCE 312 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Tindane, T N"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "ETS 312 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "BIE 312 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ETS 318 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Abanyie, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "ETS 412 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Abanyie, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "PHE 212 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 212 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Essel, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "CHE 212 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "BIE 204 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "FSC 302 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Seidu, R A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 6:45p",
+    "Course": "FSC 204 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Anyorigiya, T"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "BIE 204 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "BIE 302 Lec 2",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 10:00a",
+    "Course": "MTH 674 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Seidu, B"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 1:25p",
+    "Course": "BIO 434 Lec 1a",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Motey, G A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIO 334 Lec 1a",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Adetunde, L A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIO 404 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Azameti, M K, Appiah-Kubi, K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "STS 362 Lec 2",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Anuwoje, I A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "STS 464 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Zamanah, E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "STS 472 Lec 2",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Angbing, I D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "STS 452 Lec 2",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Nasiru, S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "STS 342 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Jakperik, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 7:50p",
+    "Course": "STS 342 Lec 2",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Jakperik, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PHY 414 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "8:05a - 9:05a",
+    "Course": "PHY 412 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "9:10a - 10:10a",
+    "Course": "PHY 232 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ETS 416 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 4:35p",
+    "Course": "PHY 316 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ETS 406 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "5:50p - 6:50p",
+    "Course": "ETS 212 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ETS 208 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Berdie, B S"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ESD 308 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "1:30p - 2:30p",
+    "Course": "CAC 106 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "2:35p - 3:35p",
+    "Course": "CAC 302 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Anafo, A"
+  },
+  {
+    "Day": "Wednesday",
+    "Time": "3:40p - 6:40p",
+    "Course": "ICT 606 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ENV 214 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Joan, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "MTH 322 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ENV 322 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "ENV 310 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Joan, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "DLT 102 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "DLT 112 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Shaban, S H"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 106 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Kwose, W"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "CHE 212 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ANUR 202 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Achaliwie, F"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIE 208 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "FCE 304 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Sie, C K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 108 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Kwose, W"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CDS 204 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "CHM 202 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Mbatchou, V C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "CDS 426 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHT 302 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Bayor, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ENV 244 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Joan, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BCH 610 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Agongo, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHT 104 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Armah, E K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 12:10p",
+    "Course": "ENV 614 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Abalori, T"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "CHM 232 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Olutayo, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 3:35p",
+    "Course": "MTH 472 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Oladejo, N K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 4:40p",
+    "Course": "ESD 104 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Owusu, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ENV 432 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Owusu, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "ESD 306 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ESD 106 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ETS 314 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Amadu, C C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "NURS 117 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Kamptiib, M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "ESD 202 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "RMID 303 Lec 2",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Akunvane, R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "RMID 307 Lec 2",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 107 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "DLT 216 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Oyelude, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "BCH 608 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Donkor, M, Abugri, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ANUR 214 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Hama, Neille"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "DLT 214 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Olutayo, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 10:00a",
+    "Course": "CSC 604 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 1:15p",
+    "Course": "CSC 606 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Bankas, E K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 4:30p",
+    "Course": "CSC 602 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CDS 206 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIE 406 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "CHE 302 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Abukari, M A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHE 202 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Puzer, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "MAE 106 Lec 2",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "FRN 302 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Lambon, A K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 7:45p",
+    "Course": "CHM 544 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Oyelude, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 10:00a",
+    "Course": "BCH 362 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 1:15p",
+    "Course": "PHT 262 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Mohammed, M S, Quansah, D K, Shaban, S H"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "CHM 448 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Abagale, A S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 416 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Azameti, M K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 12:15p",
+    "Course": "BIO 402 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Adetunde, LA"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIO 422 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Angyiereyiri, E D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIO 320 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Kombat, E O"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHY 312 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PMP 422 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Abubakari, M N"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PMP 446 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHY 308 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Mensah, P K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHY 422 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Fosu-Amankwak, K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "PMP 302 Lec 2",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "RMID 313 Lec 2",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ANUR 208 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "PFR 304 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Akazili, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "EPB 306 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Mubaric, Y"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "NURS 115 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Kukeba, M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CHM 444 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Pedavaoh, M M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PFR 302 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Salifu, R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MTH 106 Lec 2",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Osei, B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "ESD 302 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "DCS 106 Lec 1",
+    "Venue": "NGF 1 (150, 36.60)",
+    "Instructor(s)": "Agebure, M A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PFR 206 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Salifu, R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "8:05a - 9:05a",
+    "Course": "EPB 204 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Welaga, P"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "EPB 202 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Moro, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "EPB 106 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Kampo, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "NURS 112 Lec 1",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Mohammed, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 4:40p",
+    "Course": "PFR 202 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Anaba, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "EPB 206 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Atire, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "PFR 104 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Beeri, P, Sakeah, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "PFR 204 Lec 2",
+    "Venue": "NH 1 (500, 51.97)",
+    "Instructor(s)": "Achana, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DMT 202 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Adjabui, M J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "MTH 206 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 12:20p",
+    "Course": "MTH 352 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "MTH 392 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Oladejo, N K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "STS 202 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Anang, R C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "MTH 384 Lec 2",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Mensah, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "STS 316 Lec 1",
+    "Venue": "NH 2 (200, 57.07)",
+    "Instructor(s)": "Angbing, I D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CSC 448 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Armah, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MTH 482 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Boah, D K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 11:15a",
+    "Course": "CSC 104 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MTH 202 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Alhassan, E A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CSC 424 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Nakpih, C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CSC 448 Lec 1",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Armah, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CSC 306 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Aburinya, B B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "CSC 102 Lec 2",
+    "Venue": "NHA 1 (350, 52.00)",
+    "Instructor(s)": "Azaare, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ANUR 212 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "PHY 320 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "PHY 320 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "EPB 102 Lec 1",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Samari, J A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "MTH 212 Lec 2",
+    "Venue": "NHA 2 (250, 31.60)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ETS 206 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Mohammed, A R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "DME 206 Lec 1a",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 11:15a",
+    "Course": "MTH 316 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Abe-I-Kpeng, G"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DCS 202 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "SOE 404 Lec 1",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Akobre, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "MTH 474 Lec 2",
+    "Venue": "NHA 3 (100, 52.93)",
+    "Instructor(s)": "Kulu, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "DIT 102 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "DCS 102 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "CHM 322 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Bayor, J, Pelig-Ba, K B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ITC 302 Lec 2",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Bazuku, R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "DSE 204 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ICS 304 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Ahene, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ITC 404 Lec 1",
+    "Venue": "NHA 4 (100, 49.97)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ITC 310 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Strato, B A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "DCS 212 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "SCE 302 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ITC 204 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Aabaah, I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 3:35p",
+    "Course": "MAE 104 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Atepor, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 6:45p",
+    "Course": "ETS 102 Lec 1",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "DCS 202 Lec 2",
+    "Venue": "NTF 1 (120, 36.63)",
+    "Instructor(s)": "Aveyom, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "ICS 402 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Bakawari, BE"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "BCH 402 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Adu-Frimpong, M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 12:20p",
+    "Course": "ETS 206 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Mohammed, A R"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "SOE 322 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ICS 104 Lec 1",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Opanin, G E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "FSC 308 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CAC 404 Lec 3",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Luu, Y"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "CAC 306 Lec 2",
+    "Venue": "NTF 2 (100, 47.93)",
+    "Instructor(s)": "Mensah, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHT 214 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Mohammed, M S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ESD 106 Lec 2",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "DCI 106 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Akolbilla, I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "DCI 206 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Adom, K D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ICS 208 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Bakawari, B E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CHM 304 Lec 1",
+    "Venue": "NTF 3 (80, 48.83)",
+    "Instructor(s)": "Mbatchou, VC"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BCH 612 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Anyorigiya, T"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ENV 422 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Atindana, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 1:15p",
+    "Course": "MTH 612 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Twum, S B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CHM 102 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ENV 606 Lec 1",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Ampadu, B"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "ESD 202 Lec 2",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "ENV 204 Lec 1a",
+    "Venue": "PUB. HEALTH RM 2 (30, 58.10)",
+    "Instructor(s)": "Amadu, C C"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "PHE 204 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Anankabiik, JA"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "ETS 312 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Enzula, B E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "MAE 408 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Atepor, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 3:30p",
+    "Course": "FDE 206 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Yaro, D S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CHE 204 Lec 1",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Dorsah, P"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CHE 302 Lec 2",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Abukari, M A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "MAE 402 Lec 1a",
+    "Venue": "PUB. HEALTH RM 1 (50, 58.10)",
+    "Instructor(s)": "Adams, F X"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIE 306 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Wilmot, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "EPB 606 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Welaga, P"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHT 332 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Ziemah, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "CHM 332 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Quansah, D K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 3:35p",
+    "Course": "MAE 404 Lec 2",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Bornaa, C S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 5:40p",
+    "Course": "MAE 304 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Obeng, M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 7:50p",
+    "Course": "MAE 306 Lec 1",
+    "Venue": "PUB. HEALTH RM 4 (50, 58.10)",
+    "Instructor(s)": "Hamidu, B I"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 326 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Atindana, S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "BIO 424 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Asoala, V"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 12:15p",
+    "Course": "BIO 222 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Awo, O"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "ETS 212 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Asante, A D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 3:35p",
+    "Course": "BIO 232 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Motey, G A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 4:40p",
+    "Course": "BIO 420 Lec 1",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Angyiereyiri, E D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "BIO 324 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Kombat, E O"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "BIO 436 Lec 1a",
+    "Venue": "PUB. HEALTH RM3 (50, 58.10)",
+    "Instructor(s)": "Azameti, M K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 9:00a",
+    "Course": "STS 316 Lec 2",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Angbing, I D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 10:10a",
+    "Course": "MTH 478 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Bonye, F"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 12:15p",
+    "Course": "MTH 442 Lec 2",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Nantomah, K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "12:25p - 2:25p",
+    "Course": "MTH 452 Lec 2",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Etwire, C J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 5:35p",
+    "Course": "MTH 682 Lec 1",
+    "Venue": "SL - BIOLOGY CLR (50, 46.90)",
+    "Instructor(s)": "Nantomah, K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 10:00a",
+    "Course": "STS 670 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Engmann, G M"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 1:15p",
+    "Course": "STS 612 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Jakperik, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 4:30p",
+    "Course": "STS 652 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Abonongo, J"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 7:45p",
+    "Course": "STS 660 Lec 1",
+    "Venue": "SL - BIOTECH CLR (50, 55.03)",
+    "Instructor(s)": "Jakperik, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 8:00a",
+    "Course": "PHY 402 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "8:05a - 9:05a",
+    "Course": "PMP 304 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Issahaku, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "9:10a - 11:10a",
+    "Course": "PHY 314 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Adazabra, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "11:20a - 1:20p",
+    "Course": "PHY 208 Lec 1",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Adazabra, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "PMP 422 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 3:35p",
+    "Course": "PMP 446 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "3:40p - 4:40p",
+    "Course": "PMP 346 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 5:45p",
+    "Course": "PHY 208 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Adazabra, A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "5:50p - 6:50p",
+    "Course": "PHY 312 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "PHY 212 Lec 2",
+    "Venue": "SL - PHYSICS CLR (50, 58.10)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "7:00a - 10:00a",
+    "Course": "ICT 608 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Agbedemnab, PA"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "10:15a - 1:15p",
+    "Course": "ICT 610 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Agbedemnab, PA"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "1:30p - 2:30p",
+    "Course": "CAC 206 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Ahia, B N"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "2:35p - 4:35p",
+    "Course": "CHM 422 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Ohene, B A"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "4:45p - 7:45p",
+    "Course": "ICT 604 Lec 1",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Bankas, E K"
+  },
+  {
+    "Day": "Thursday",
+    "Time": "6:55p - 7:55p",
+    "Course": "SCE 302 Lec 2",
+    "Venue": "SL AUDIO VISUAL (80, 50.97)",
+    "Instructor(s)": "Ayeriga, M W"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 10:00a",
+    "Course": "CHM 504 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Abagale, A S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "MTH 322 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Sandow, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "ESD 108 Lec 2",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ETS 306 Lec 1",
+    "Venue": "C-BLOCK RM 2 (40, 50.97)",
+    "Instructor(s)": "Abanyie, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 8:00a",
+    "Course": "MAE 302 Lec 2",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "8:05a - 9:05a",
+    "Course": "MAE 208 Lec 2",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Boahen, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "CHE 102 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Fatao, A"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIE 312 Lec 1",
+    "Venue": "C-BLOCK RM 4 (100, 45.87)",
+    "Instructor(s)": "Ayimbila, E A"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BCH 602 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Adu-Frimpong, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 11:10a",
+    "Course": "CDS 404 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Gati, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 2:30p",
+    "Course": "ENV 402 Lec 1a",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "2:35p - 4:35p",
+    "Course": "ENV 242 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "4:45p - 5:45p",
+    "Course": "CDS 206 Lec 2",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "ESD 102 Lec 1",
+    "Venue": "C-BLOCK RM 1 (40, 56.07)",
+    "Instructor(s)": "Ampofo, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 8:00a",
+    "Course": "ENV 326 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Timothy, A"
+  },
+  {
+    "Day": "Friday",
+    "Time": "8:05a - 9:05a",
+    "Course": "ENV 342 Lec 1a",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Douti, N"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 10:10a",
+    "Course": "ESD 302 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Asaah, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "10:15a - 12:15p",
+    "Course": "DLT 116 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Bayor, J"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 4:30p",
+    "Course": "ENV 632 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Adonadaga, MG"
+  },
+  {
+    "Day": "Friday",
+    "Time": "4:45p - 5:45p",
+    "Course": "ETS 306 Lec 2",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Abanyie, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHT 106 Lec 1",
+    "Venue": "C-BLOCK RM 3 (40, 57.10)",
+    "Instructor(s)": "Auphedeous, DY"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 9:00a",
+    "Course": "EPB 312 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Achana, F"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 11:10a",
+    "Course": "MTH 332 Lec 2",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Boah, D K"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "NURS 104 Lec 2",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Apee, G"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "NURS 112 Lec 2",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Mohammed, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BCH 312 Lec 1",
+    "Venue": "C-BLOCK RM 5 (100, 46.93)",
+    "Instructor(s)": "Donkor, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 9:00a",
+    "Course": "NURS 111 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Nsoh, B D"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 12:10p",
+    "Course": "ENV 616 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": "Essel, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "RMID 305 Lec 2",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "RMID 303 Lec 1",
+    "Venue": "C-BLOCK RM 6 (100, 43.90)",
+    "Instructor(s)": ""
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 9:00a",
+    "Course": "CDS 102 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 12:10p",
+    "Course": "CSC 618 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Agbedemnab, PA"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 4:30p",
+    "Course": "CSC 610 Lec 1",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Friday",
+    "Time": "4:45p - 5:45p",
+    "Course": "CDS 304 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Baagyere, E Y"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 6:50p",
+    "Course": "CDS 308 Lec 2",
+    "Venue": "Comp. LAB Classroom (30, 50.00)",
+    "Instructor(s)": "Gyamerah, S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 8:00a",
+    "Course": "CHE 102 Lec 2",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Fatao, A"
+  },
+  {
+    "Day": "Friday",
+    "Time": "8:05a - 10:05a",
+    "Course": "MAE 102 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Asiedu, L O"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHT 202 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Bayor, J, Pelig-Ba, K B"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "CHM 212 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Armah, E K"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PHE 102 Lec 1",
+    "Venue": "FRN - CENTRE (100, 54.00)",
+    "Instructor(s)": "Anankabiik, JA"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 10:00a",
+    "Course": "PHT 362 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Quansah, D K, Mosobil, R, Shaban, S H, Mohammed, M S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BCH 308 Lec 1",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Sunwiale, S S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BCH 406 Lec 1a",
+    "Venue": "GF BLOCK 1 (100, 41.77)",
+    "Instructor(s)": "Dassah, S D"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 9:00a",
+    "Course": "BIO 418 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Essel, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 10:10a",
+    "Course": "BIO 102 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Captain-Esoah, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "10:15a - 12:15p",
+    "Course": "BIO 304 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Attaribo, T"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "BIO 328 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Captain-Esoah, M"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "BIO 420 Lec 1a",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Angyiereyiri, E D"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "BIO 436 Lec 1",
+    "Venue": "GF BLOCK 2 (100, 39.83)",
+    "Instructor(s)": "Azameti, M K"
+  },
+  {
+    "Day": "Friday",
+    "Time": "7:00a - 10:00a",
+    "Course": "PHY 392 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Gyasi, D"
+  },
+  {
+    "Day": "Friday",
+    "Time": "1:30p - 3:30p",
+    "Course": "PHY 412 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Bayor, J S"
+  },
+  {
+    "Day": "Friday",
+    "Time": "3:40p - 5:40p",
+    "Course": "PHY 202 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Balfour, E"
+  },
+  {
+    "Day": "Friday",
+    "Time": "5:50p - 7:50p",
+    "Course": "PMP 444 Lec 1",
+    "Venue": "GF BLOCK 3 (100, 54.00)",
+    "Instructor(s)": "Abubakari, MN"
+  },
+  {
+    "Day": "Friday",
+    "Time": "9:10a - 11:10a",
+    "Course": "EPB 308 Lec 1",
+    "Venue": "NEW LIBRARY NL (150, 26.47)",
+    "Instructor(s)": "Beeri, P"
+  }
+]
