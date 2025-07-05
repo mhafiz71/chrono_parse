@@ -1,20 +1,12 @@
 services:
-  # PostgreSQL Database
   - type: pserv
     name: chronopars-db
     plan: free
-    
-  # Web Service
+
   - type: web
-    name: chrono_parse
+    name: chrono-parse
     env: python
-    plan: free
-    region: oregon
-    buildCommand: |
-      pip install -r requirements.txt &&
-      python manage.py migrate &&
-      python manage.py seed_data &&
-      python manage.py collectstatic --noinput
+    buildCommand: pip install -r requirements.txt && python manage.py migrate && python manage.py seed_data && python manage.py collectstatic --noinput
     startCommand: gunicorn chronopars.wsgi:application
     envVars:
       - key: DATABASE_URL
@@ -23,5 +15,3 @@ services:
           property: connectionString
       - key: DJANGO_SETTINGS_MODULE
         value: chronopars.settings
-      - key: PYTHON_VERSION
-        value: 3.11.0
