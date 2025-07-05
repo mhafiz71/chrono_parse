@@ -1,0 +1,16 @@
+[
+{
+  "model": "core.courseregistrationhistory",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "source": 1,
+    "course_codes": "[\"CSC 306\", \"CSC 314\", \"CSC 322\", \"CSC 364\", \"IAT 390\", \"MTH 312\", \"PHY 320\", \"SION 202\", \"WITH 680\"]",
+    "display_name": "BSc. Computer Science (300) - qq - 9 courses",
+    "program": "BSc. Computer Science",
+    "level": "300",
+    "created_at": "2025-07-05T16:39:06.951Z",
+    "last_used": "2025-07-05T16:53:18.089Z"
+  }
+}
+]
