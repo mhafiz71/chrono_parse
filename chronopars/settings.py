@@ -94,9 +94,20 @@ AUTH_USER_MODEL = 'core.User'  # Custom user model
 # Use PostgreSQL in production (when DATABASE_URL is set), SQLite in development
 if os.environ.get('DATABASE_URL'):
     # Production database (PostgreSQL on Render)
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
+    try:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    except Exception as e:
+        # Fallback to SQLite if PostgreSQL setup fails
+        print(
+            f"Warning: PostgreSQL setup failed ({e}), falling back to SQLite")
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+        }
 else:
     # Development database (SQLite)
     DATABASES = {

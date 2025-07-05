@@ -6,7 +6,7 @@ services:
   - type: web
     name: chrono-parse
     env: python
-    buildCommand: pip install -r requirements.txt && python manage.py migrate && python manage.py seed_data && python manage.py collectstatic --noinput
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt && python manage.py migrate && python manage.py seed_data && python manage.py collectstatic --noinput
     startCommand: gunicorn chronopars.wsgi:application
     envVars:
       - key: DATABASE_URL
