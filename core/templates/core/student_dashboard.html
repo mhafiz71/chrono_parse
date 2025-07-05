@@ -68,7 +68,7 @@
                     <div>
                         <label for="timetable_source" class="block text-sm font-medium text-gray-300 mb-2">Timetable Source</label>
                         <select name="timetable_source" id="timetable_source" required class="input-modern block w-full px-4 py-3 rounded-lg">
-                            <option value="">Select timetable source</option>
+                            <option value="">Select general timetable</option>
                             {% for source in sources %}
                             <option value="{{ source.id }}" {% if source.id == selected_source_id %}selected{% endif %}>{{ source.display_name }}</option>
                             {% endfor %}
